@@ -58,7 +58,12 @@ const ApplicationSwiper = () => {
 			<div className='flex flex-col gap-8 block xl:hidden w-screen px-2'>
 				{applications.map((application) => {
 					return (
-						<Link href={application.url} target='_blank' className='block'>
+						<Link
+							key={application.name}
+							href={application.url}
+							target='_blank'
+							className='block'
+						>
 							<Image
 								alt={application.name}
 								src={`/images/${_.replace(

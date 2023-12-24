@@ -11,6 +11,7 @@ function Footer() {
 				<div className='flex flex-col lg:flex-row gap-10 justify-center mx-auto'>
 					{accounts.map((account) => (
 						<Button
+							key={account.name}
 							as={Link}
 							href={account.url}
 							target='_blank'

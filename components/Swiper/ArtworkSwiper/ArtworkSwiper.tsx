@@ -48,7 +48,7 @@ const ArtworkSwiper = () => {
 			<div className='flex flex-col gap-8 block lg:hidden w-screen px-2'>
 				{artworks.map((artwork) => {
 					return (
-						<Link href={artwork.url} target='_blank'>
+						<Link key={artwork.name} href={artwork.url} target='_blank'>
 							<Image
 								alt={artwork.name}
 								src={`/images/${_.replace(
