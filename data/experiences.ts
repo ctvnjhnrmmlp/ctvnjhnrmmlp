@@ -1,0 +1,58 @@
+const experiences = [
+	{
+		position: 'Full Stack Developer',
+		company: 'PSI',
+		duration: 'September 2023 - Present',
+		mode: 'Remote',
+		description: `I am a versatile Full Stack Developer with expertise in WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and proficiency in industry-standard tools such as Figma, VS Code, Photoshop, and Git. With PHP and Laravel, I create robust backend solutions, implementing complex functionalities and database structures. I leverage Angular, JavaScript, HTML, CSS, and Bootstrap to craft interactive and responsive front-end interfaces that enhance user experience across platforms.`,
+		url: 'psi.com',
+		part: 2,
+	},
+	{
+		position: 'Full Stack Developer',
+		company: 'Raicom LLC',
+		duration: 'August 2023 - September 2023',
+		mode: 'Remote',
+		description: `I am a versatile Full Stack Developer with expertise in WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and proficiency in industry-standard tools such as Figma, VS Code, Photoshop, and Git. With PHP and Laravel, I create robust backend solutions, implementing complex functionalities and database structures. I leverage Angular, JavaScript, HTML, CSS, and Bootstrap to craft interactive and responsive front-end interfaces that enhance user experience across platforms.`,
+		url: 'raicom.com',
+		part: 2,
+	},
+	{
+		position: 'Front End Developer',
+		company: 'Konsumer Solutions Group',
+		duration: 'July 2023 - September 2023',
+		mode: 'Remote',
+		description: `I am a versatile Full Stack Developer with expertise in WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and proficiency in industry-standard tools such as Figma, VS Code, Photoshop, and Git. With PHP and Laravel, I create robust backend solutions, implementing complex functionalities and database structures. I leverage Angular, JavaScript, HTML, CSS, and Bootstrap to craft interactive and responsive front-end interfaces that enhance user experience across platforms.`,
+		url: 'https://konsumersolutions.com',
+		part: 2,
+	},
+	{
+		position: 'Full Stack Developer',
+		company: 'QX Information Technology Corp',
+		duration: 'March 2023 - September 2023',
+		mode: 'Remote',
+		description: `I am a versatile Full Stack Developer with expertise in WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and proficiency in industry-standard tools such as Figma, VS Code, Photoshop, and Git. With PHP and Laravel, I create robust backend solutions, implementing complex functionalities and database structures. I leverage Angular, JavaScript, HTML, CSS, and Bootstrap to craft interactive and responsive front-end interfaces that enhance user experience across platforms.`,
+		url: 'https://www.quantumx.com/',
+		part: 1,
+	},
+	{
+		position: 'Front End Developer',
+		company: 'Fusion Growth Partners',
+		duration: 'February 2023 - March 2023',
+		mode: 'Remote',
+		description: `In my previous role as a skilled Frontend Developer, I gained valuable experience crafting exceptional user interfaces and enhancing user experience using HTML, CSS, and JavaScript. Integrating data-driven elements and implementing effective CRM solutions, I optimized user engagement and business processes through proficiency in iHouseCRM, Excel, and Forms. Relying on industry-standard tools like VS Code and Zoho, I streamlined development processes and facilitated efficient project management, ensuring high-quality front-end solutions within tight deadlines.`,
+		url: 'https://www.growwithfusion.com/',
+		part: 1,
+	},
+	{
+		position: 'Graphic Designer',
+		company: 'Blue Alpha Kennel',
+		duration: 'January 2023 - March 2023',
+		mode: 'Remote',
+		description: `As a part-time Graphic Designer, I have gained extensive experience in creating visually captivating designs for various projects, leveraging my expertise in technologies such as Canva, Figma, and Photoshop. With an eye for aesthetics, a deep understanding of design principles, and a dedication to staying updated with emerging trends, I consistently deliver high-quality graphics that engage and captivate audiences across different platforms. My diverse skill set, proficiency in design tools, and commitment to continuous learning make me well-equipped to bring exceptional visual solutions.`,
+		url: 'https://www.facebook.com/DogBreeder2022/',
+		part: 1,
+	},
+];
+
+export default experiences;
