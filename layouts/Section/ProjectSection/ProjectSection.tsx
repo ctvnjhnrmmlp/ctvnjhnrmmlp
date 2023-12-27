@@ -10,7 +10,7 @@ function ProjectSection() {
 	return (
 		<section id='projects' className='flex flex-col gap-40 min-h-screen'>
 			<div>
-				<div className='flex flex-wrap gap-8 justify-center'>
+				<div className='flex flex-wrap gap-8 justify-center p-4'>
 					{technologies.map((technology) => {
 						return (
 							<Link
