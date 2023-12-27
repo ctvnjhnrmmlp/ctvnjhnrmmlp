@@ -1,7 +1,6 @@
 import { BsFillBootstrapFill, BsGit } from 'react-icons/bs';
 import {
 	FaAngular,
-	FaFigma,
 	FaJava,
 	FaLaravel,
 	FaNodeJs,
@@ -9,19 +8,13 @@ import {
 	FaReact,
 	FaWordpress,
 } from 'react-icons/fa';
-import { GrMysql } from 'react-icons/gr';
-import { IoLogoVue } from 'react-icons/io5';
 import {
-	SiAdobephotoshop,
-	SiAdobexd,
+	SiAmazonaws,
 	SiApollographql,
-	SiCsharp,
 	SiDebian,
 	SiExpress,
 	SiFastapi,
 	SiGraphql,
-	SiIonic,
-	SiJavascript,
 	SiMongodb,
 	SiNextdotjs,
 	SiPhp,
@@ -29,17 +22,13 @@ import {
 	SiPrisma,
 	SiSocketdotio,
 	SiTailwindcss,
-	SiTensorflow,
 	SiTypescript,
 } from 'react-icons/si';
 
+import { GrMysql } from 'react-icons/gr';
+import { IoLogoVue } from 'react-icons/io5';
+
 const technologies = [
-	// {
-	// 	name: 'JavaScript',
-	// 	url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-	// 	color: '#F0DC4E',
-	// 	icon: SiJavascript,
-	// },
 	{
 		name: 'TypeScript',
 		url: 'https://www.typescriptlang.org/',
@@ -64,18 +53,6 @@ const technologies = [
 		color: '#FFD343',
 		icon: FaPython,
 	},
-	// {
-	// 	name: 'C#',
-	// 	url: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
-	// 	color: '#953DAC',
-	// 	icon: SiCsharp,
-	// },
-	// {
-	// 	name: 'Ionic',
-	// 	url: 'https://ionicframework.com/',
-	// 	color: '#176BFF',
-	// 	icon: SiIonic,
-	// },
 	{
 		name: 'React',
 		url: 'https://react.dev/',
@@ -178,12 +155,6 @@ const technologies = [
 		color: '#6F2CF2',
 		icon: BsFillBootstrapFill,
 	},
-	// {
-	// 	name: 'TensorFlow',
-	// 	url: 'https://www.tensorflow.org/js',
-	// 	color: '#FF9000',
-	// 	icon: SiTensorflow,
-	// },
 	{
 		name: 'Debian',
 		url: 'https://www.debian.org/',
@@ -196,29 +167,17 @@ const technologies = [
 		color: '#003C56',
 		icon: FaWordpress,
 	},
-	// {
-	// 	name: 'Figma',
-	// 	url: 'https://www.figma.com/',
-	// 	color: '#A259FF',
-	// 	icon: FaFigma,
-	// },
-	// {
-	// 	name: 'Photoshop',
-	// 	url: 'https://www.adobe.com/ph_en/products/photoshop.html',
-	// 	color: '#001D34',
-	// 	icon: SiAdobephotoshop,
-	// },
-	// {
-	// 	name: 'XD',
-	// 	url: 'https://helpx.adobe.com/support/xd.html',
-	// 	color: '#450135',
-	// 	icon: SiAdobexd,
-	// },
 	{
 		name: 'Git',
 		url: 'https://git-scm.com/',
 		color: '#F64D27',
 		icon: BsGit,
+	},
+	{
+		name: 'AWS',
+		url: 'https://aws.amazon.com/',
+		color: '#F64D27',
+		icon: SiAmazonaws,
 	},
 ];
 
