@@ -1,5 +1,6 @@
-import experiences from '@/data/experiences';
 import { Button, Card, CardBody, CardHeader, Chip } from '@nextui-org/react';
+
+import experiences from '@/data/experiences';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 import { RiRadioButtonLine } from 'react-icons/ri';
@@ -54,8 +55,8 @@ function ExperienceSection() {
 											<p>{experience.mode}</p>
 										</div>
 									</CardHeader>
-									<CardBody className='flex flex-col justify-center'>
-										<p className='text-center sm:w-10/12 lg:w-8/12 mx-auto text-lg md:text-2xl font-extralight'>
+									<CardBody className='flex flex-col justify-center p-0'>
+										<p className='text-center w-full sm:w-10/12 lg:w-8/12 mx-auto text-lg md:text-2xl font-extralight'>
 											{experience.description}
 										</p>
 									</CardBody>
