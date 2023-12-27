@@ -31,7 +31,7 @@ function ExperienceSection() {
 					{experiences.map((experience) => {
 						return (
 							<Link key={experience.url} href={experience.url} target='_blank'>
-								<Card className='dark:bg-black py-12 px-6 md:px-0 dark:border-[#3F3F46] rounded-xxl shadow-none border border-[#D4D4D8] gap-2'>
+								<Card className='dark:bg-black py-12 px-12 md:px-0 dark:border-[#3F3F46] rounded-xxl shadow-none border border-[#D4D4D8] gap-2'>
 									<CardHeader className='flex flex-col gap-3'>
 										<div className='flex flex-col gap-3'>
 											<h3 className='uppercase text-4xl sm:text-5xl md:text-6xl text-center'>
