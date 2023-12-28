@@ -4,8 +4,9 @@ import {
 	FaGoogle,
 	FaLinkedinIn,
 	FaStackOverflow,
-	FaTwitter,
 } from 'react-icons/fa';
+
+import { BsTwitterX } from 'react-icons/bs';
 
 const accounts = [
 	{
@@ -14,9 +15,9 @@ const accounts = [
 		icon: FaFacebookF,
 	},
 	{
-		name: 'Twitter',
+		name: 'X',
 		url: 'https://twitter.com/ctvnjhnrmmlp',
-		icon: FaTwitter,
+		icon: BsTwitterX,
 	},
 	{
 		name: 'Google',
