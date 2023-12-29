@@ -24,6 +24,7 @@ import {
 	SiPostgresql,
 	SiPrisma,
 	SiSocketdotio,
+	SiSpringboot,
 	SiTailwindcss,
 	SiTrpc,
 	SiTypescript,
@@ -108,6 +109,11 @@ const technologies = [
 		name: 'Laravel',
 		url: 'https://laravel.com/',
 		icon: FaLaravel,
+	},
+	{
+		name: 'Spring Boot',
+		url: 'https://spring.io/projects/spring-boot/',
+		icon: SiSpringboot,
 	},
 	{
 		name: 'Fast API',
