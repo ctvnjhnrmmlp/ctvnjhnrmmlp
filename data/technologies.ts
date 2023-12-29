@@ -15,6 +15,7 @@ import {
 	SiExpress,
 	SiFastapi,
 	SiGraphql,
+	SiIonic,
 	SiMongodb,
 	SiMongoose,
 	SiNextdotjs,
@@ -30,6 +31,7 @@ import {
 
 import { GrMysql } from 'react-icons/gr';
 import { IoLogoVue } from 'react-icons/io5';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const technologies = [
 	{
@@ -111,6 +113,16 @@ const technologies = [
 		name: 'Fast API',
 		url: 'https://fastapi.tiangolo.com/',
 		icon: SiFastapi,
+	},
+	{
+		name: 'Ionic',
+		url: 'https://ionicframework.com/',
+		icon: SiIonic,
+	},
+	{
+		name: 'React Native',
+		url: 'https://reactnative.dev/',
+		icon: TbBrandReactNative,
 	},
 	{
 		name: 'Prisma',
