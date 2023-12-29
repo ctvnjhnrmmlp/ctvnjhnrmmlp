@@ -23,6 +23,7 @@ import {
 	SiPrisma,
 	SiSocketdotio,
 	SiTailwindcss,
+	SiTrpc,
 	SiTypescript,
 } from 'react-icons/si';
 
@@ -84,6 +85,11 @@ const technologies = [
 		name: 'Apollo Client',
 		url: 'https://graphql.org/',
 		icon: SiApollographql,
+	},
+	{
+		name: 'trpc',
+		url: 'https://trpc.io/',
+		icon: SiTrpc,
 	},
 	{
 		name: 'Node',
