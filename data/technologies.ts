@@ -16,6 +16,7 @@ import {
 	SiFastapi,
 	SiGraphql,
 	SiMongodb,
+	SiMongoose,
 	SiNextdotjs,
 	SiNuxtdotjs,
 	SiPhp,
@@ -115,6 +116,11 @@ const technologies = [
 		name: 'Prisma',
 		url: 'https://www.prisma.io/',
 		icon: SiPrisma,
+	},
+	{
+		name: 'Mongoose',
+		url: 'https://mongoosejs.com/',
+		icon: SiMongoose,
 	},
 	{
 		name: 'MySQL',
