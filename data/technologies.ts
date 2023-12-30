@@ -29,10 +29,10 @@ import {
 	SiTrpc,
 	SiTypescript,
 } from 'react-icons/si';
+import { TbBrandCSharp, TbBrandReactNative } from 'react-icons/tb';
 
 import { GrMysql } from 'react-icons/gr';
 import { IoLogoVue } from 'react-icons/io5';
-import { TbBrandReactNative } from 'react-icons/tb';
 
 const technologies = [
 	{
@@ -49,6 +49,11 @@ const technologies = [
 		name: 'Java',
 		url: 'https://www.java.com/en/',
 		icon: FaJava,
+	},
+	{
+		name: 'C#',
+		url: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+		icon: TbBrandCSharp,
 	},
 	{
 		name: 'Python',
