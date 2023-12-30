@@ -12,6 +12,7 @@ import {
 	SiAmazonaws,
 	SiApollographql,
 	SiDebian,
+	SiDotnet,
 	SiExpress,
 	SiFastapi,
 	SiGraphql,
@@ -119,6 +120,11 @@ const technologies = [
 		name: 'Spring Boot',
 		url: 'https://spring.io/projects/spring-boot/',
 		icon: SiSpringboot,
+	},
+	{
+		name: 'ASP .NET Core MVC',
+		url: 'https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-8.0',
+		icon: SiDotnet,
 	},
 	{
 		name: 'Fast API',
