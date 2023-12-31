@@ -1,9 +1,10 @@
+import './globals.css';
+
 import Footer from '@/layouts/Footer/Footer';
 import Nav from '@/layouts/Nav/Nav';
 import { ScrollShadow } from '@nextui-org/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
 import Providers from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -27,7 +28,6 @@ export const metadata: Metadata = {
 		canonical: 'https://ctvnjhnrmmlp.vercel.app',
 	},
 	icons: '/images/self-logo.svg',
-	manifest: '/documents/manifest.txt',
 	openGraph: {
 		type: 'website',
 		url: 'https://ctvnjhnrmmlp.vercel.app',
