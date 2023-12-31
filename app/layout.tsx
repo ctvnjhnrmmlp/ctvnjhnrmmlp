@@ -65,7 +65,6 @@ export const metadata: Metadata = {
 		telephone: false,
 	},
 	abstract: getJoinedStringPeriod(professions),
-	appLinks: {},
 	category: `${getJoinedStringComma(professions).toLowerCase()}`,
 	classification: `${getJoinedStringComma(professions).toLowerCase()}`,
 };
