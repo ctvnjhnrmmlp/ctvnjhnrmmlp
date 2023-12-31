@@ -52,11 +52,6 @@ const technologies = [
 		icon: FaJava,
 	},
 	{
-		name: 'C#',
-		url: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
-		icon: TbBrandCSharp,
-	},
-	{
 		name: 'Python',
 		url: 'https://www.python.org/',
 		icon: FaPython,
@@ -112,6 +107,11 @@ const technologies = [
 		icon: SiExpress,
 	},
 	{
+		name: 'Fast API',
+		url: 'https://fastapi.tiangolo.com/',
+		icon: SiFastapi,
+	},
+	{
 		name: 'Laravel',
 		url: 'https://laravel.com/',
 		icon: FaLaravel,
@@ -120,16 +120,6 @@ const technologies = [
 		name: 'Spring Boot',
 		url: 'https://spring.io/projects/spring-boot/',
 		icon: SiSpringboot,
-	},
-	{
-		name: 'ASP .NET Core MVC',
-		url: 'https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-8.0',
-		icon: SiDotnet,
-	},
-	{
-		name: 'Fast API',
-		url: 'https://fastapi.tiangolo.com/',
-		icon: SiFastapi,
 	},
 	{
 		name: 'Ionic',
