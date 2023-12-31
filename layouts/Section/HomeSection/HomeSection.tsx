@@ -50,7 +50,6 @@ function HomeSection() {
 						height={100}
 						src='/images/self-abstract.webp'
 						alt='John Rommel Octaviano'
-						unoptimized
 					/>
 				</div>
 			</div>

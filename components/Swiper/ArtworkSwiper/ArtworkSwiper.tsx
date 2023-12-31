@@ -1,13 +1,15 @@
 'use client';
 
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import artworks from '@/data/artworks';
 import _ from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 const ArtworkSwiper = () => {
 	return (
@@ -37,7 +39,6 @@ const ArtworkSwiper = () => {
 										width={100}
 										height={100}
 										className='rounded-xxl w-screen'
-										unoptimized
 									/>
 								</Link>
 							</SwiperSlide>
@@ -45,7 +46,7 @@ const ArtworkSwiper = () => {
 					})}
 				</Swiper>
 			</div>
-			<div className='flex flex-col gap-8 block lg:hidden w-screen px-2'>
+			<div className='flex flex-col gap-8 lg:hidden w-screen px-2'>
 				{artworks.map((artwork) => {
 					return (
 						<Link key={artwork.name} href={artwork.url} target='_blank'>
@@ -59,7 +60,6 @@ const ArtworkSwiper = () => {
 								width={100}
 								height={100}
 								className='rounded-xxl w-screen'
-								unoptimized
 							/>
 						</Link>
 					);
