@@ -30,6 +30,7 @@ const ArtworkSwiper = () => {
 							>
 								<Link href={artwork.url} target='_blank'>
 									<Image
+										unoptimized
 										alt={artwork.name}
 										src={`/images/${_.replace(
 											_.lowerCase(artwork.name),
@@ -51,6 +52,7 @@ const ArtworkSwiper = () => {
 					return (
 						<Link key={artwork.name} href={artwork.url} target='_blank'>
 							<Image
+								unoptimized
 								alt={artwork.name}
 								src={`/images/${_.replace(
 									_.lowerCase(artwork.name),

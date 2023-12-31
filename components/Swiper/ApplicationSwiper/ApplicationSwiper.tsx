@@ -40,6 +40,7 @@ const ApplicationSwiper = () => {
 							>
 								<Link href={application.url} target='_blank' className='block'>
 									<Image
+										unoptimized
 										alt={application.name}
 										src={`/images/${_.replace(
 											_.lowerCase(application.name),
@@ -66,6 +67,7 @@ const ApplicationSwiper = () => {
 							className='block'
 						>
 							<Image
+								unoptimized
 								alt={application.name}
 								src={`/images/${_.replace(
 									_.lowerCase(application.name),

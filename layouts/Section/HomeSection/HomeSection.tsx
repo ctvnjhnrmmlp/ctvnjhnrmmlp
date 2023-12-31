@@ -45,6 +45,7 @@ function HomeSection() {
 				</div>
 				<div>
 					<Image
+						unoptimized
 						className='rounded-xxl mx-auto w-11/12'
 						width={100}
 						height={100}
