@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
-function HeroSection() {
+function HomeSection() {
 	return (
 		<section className='w-screen'>
 			<div className='flex flex-col gap-8 md:gap-12 lg:gap-16'>
@@ -56,4 +56,4 @@ function HeroSection() {
 	);
 }
 
-export default HeroSection;
+export default HomeSection;
