@@ -1,11 +1,12 @@
 'use client';
 
-import sections from '@/data/sections';
 import { Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
-import { useTheme } from 'next-themes';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
+
+import sections from '@/data/sections';
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 function Nav() {
 	const [mounted, setMounted] = useState(false);
@@ -18,7 +19,7 @@ function Nav() {
 	if (!mounted) return null;
 
 	return (
-		<Navbar className='fixed shadow rounded-none sm:rounded-xl sm:w-10/12 md:w-7/12 mx-auto mt-0 sm:mt-4 sm:dark:border sm:dark:border-[#3F3F46]'>
+		<Navbar className='fixed shadow rounded-none sm:rounded-xl sm:w-10/12 md:w-7/12 mx-auto mt-0 sm:mt-4 sm:dark:border sm:dark:border-[#3F3F46] duration-200'>
 			<NavbarContent className='flex gap-8 mx-auto' justify='center'>
 				{sections.map((section) => {
 					return (

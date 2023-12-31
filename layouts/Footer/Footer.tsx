@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 function Footer() {
 	return (
-		<footer id='accounts' className='py-24'>
+		<footer id='accounts' className='py-24 duration-200'>
 			<div className='flex flex-col gap-24'>
 				<div className='flex flex-col lg:flex-row gap-10 justify-center mx-auto'>
 					{accounts.map((account) => (
