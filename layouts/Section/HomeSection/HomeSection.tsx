@@ -12,14 +12,16 @@ function HomeSection() {
 					<Chip
 						variant='bordered'
 						size='lg'
-						className='text-xs sm:text-sm md:text-lg border-1 px-1 py-2 sm:px-4 sm:py-5 font-extralight'
+						className='text-xs sm:text-sm md:text-lg border-1 px-1 py-2 sm:px-4 sm:py-5 font-extralight leading-none'
 						startContent={
-							<p className='p-1'>
+							<p className='mt-0.5 p-1'>
 								<RiSparkling2Fill />
 							</p>
 						}
 					>
-						1+ Year of Professional Working Experience
+						<span className='block leading-none mt-1'>
+							1+ Year of Professional Working Experience
+						</span>
 					</Chip>
 				</div>
 				<div>
