@@ -1,7 +1,10 @@
 import './globals.css';
 
+import professions from '@/data/professions';
 import Footer from '@/layouts/Footer/Footer';
 import Nav from '@/layouts/Nav/Nav';
+import getJoinedStringComma from '@/utilities/getJoinedStringComma';
+import getJoinedStringPeriod from '@/utilities/getJoinedStringPeriod';
 import { ScrollShadow } from '@nextui-org/react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -12,12 +15,12 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
 	metadataBase: new URL('https://ctvnjhnrmmlp.vercel.app'),
 	title: 'John Rommel Octaviano',
-	description:
-		'Software Engineer. Web3 Developer. UI/UX Designer. Technical Blogger.',
+	description: getJoinedStringPeriod(professions),
 	applicationName: 'ctvnjhnrmmlp',
 	generator: 'typescript, react, nextjs, tailwindcss',
-	keywords:
-		'john rommel octaviano, ctvnjhnrmmlp, software engineer, web3 developer, ui/ux designer, technical blogger',
+	keywords: `john rommel octaviano, ctvnjhnrmmlp, ${getJoinedStringComma(
+		professions
+	).toLowerCase()}`,
 	referrer: 'origin',
 	themeColor: 'dark',
 	colorScheme: 'dark',
@@ -32,8 +35,7 @@ export const metadata: Metadata = {
 		type: 'website',
 		url: 'https://ctvnjhnrmmlp.vercel.app',
 		title: 'John Rommel Octaviano',
-		description:
-			'Software Engineer. Web3 Developer. UI/UX Designer. Technical Blogger.',
+		description: getJoinedStringPeriod(professions),
 		siteName: 'ctvnjhnrmmlp',
 		images: [
 			{
@@ -46,19 +48,13 @@ export const metadata: Metadata = {
 		siteId: '',
 		creator: 'John Rommel Octaviano',
 		creatorId: '',
-		description:
-			'Software Engineer. Web3 Developer. UI/UX Designer. Technical Blogger.',
+		description: getJoinedStringPeriod(professions),
 		title: 'John Rommel Octaviano',
 		images: [
 			{
 				url: '/images/self-abstract.webp',
 			},
 		],
-	},
-	verification: {
-		google: '',
-		yandex: '',
-		me: '',
 	},
 	appleWebApp: {
 		capable: true,
@@ -68,17 +64,10 @@ export const metadata: Metadata = {
 	formatDetection: {
 		telephone: false,
 	},
-	itunes: {
-		appId: '',
-		appArgument: '',
-	},
-	abstract:
-		'Software Engineer. Web3 Developer. UI/UX Designer. Technical Blogger.',
+	abstract: getJoinedStringPeriod(professions),
 	appLinks: {},
-	category:
-		'software engineer, web3 developer, ui/ux designer, technical blogger',
-	classification:
-		'software engineer, web3 developer, ui/ux designer, technical blogger',
+	category: `${getJoinedStringComma(professions).toLowerCase()}`,
+	classification: `${getJoinedStringComma(professions).toLowerCase()}`,
 };
 
 export default function RootLayout({
