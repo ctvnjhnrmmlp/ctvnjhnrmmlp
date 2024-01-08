@@ -10,9 +10,9 @@ import {
 } from 'react-icons/fa';
 import {
 	SiAmazonaws,
+	SiAndroidstudio,
 	SiApollographql,
 	SiDebian,
-	SiDotnet,
 	SiExpress,
 	SiFastapi,
 	SiGraphql,
@@ -30,10 +30,10 @@ import {
 	SiTrpc,
 	SiTypescript,
 } from 'react-icons/si';
-import { TbBrandCSharp, TbBrandReactNative } from 'react-icons/tb';
 
 import { GrMysql } from 'react-icons/gr';
 import { IoLogoVue } from 'react-icons/io5';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const technologies = [
 	{
@@ -130,6 +130,11 @@ const technologies = [
 		name: 'React Native',
 		url: 'https://reactnative.dev/',
 		icon: TbBrandReactNative,
+	},
+	{
+		name: 'Android Studio',
+		url: 'https://developer.android.com/studio',
+		icon: SiAndroidstudio,
 	},
 	{
 		name: 'Prisma',
