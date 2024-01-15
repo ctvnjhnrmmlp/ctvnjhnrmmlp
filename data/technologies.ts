@@ -10,7 +10,6 @@ import {
 } from 'react-icons/fa';
 import {
 	SiAmazonaws,
-	SiAndroidstudio,
 	SiApollographql,
 	SiDebian,
 	SiExpress,
@@ -24,6 +23,7 @@ import {
 	SiPhp,
 	SiPostgresql,
 	SiPrisma,
+	SiPwa,
 	SiSocketdotio,
 	SiSpringboot,
 	SiTailwindcss,
@@ -132,9 +132,9 @@ const technologies = [
 		icon: TbBrandReactNative,
 	},
 	{
-		name: 'Android Studio',
-		url: 'https://developer.android.com/studio',
-		icon: SiAndroidstudio,
+		name: 'Progressive Web Apps',
+		url: 'https://web.dev/explore/progressive-web-apps',
+		icon: SiPwa,
 	},
 	{
 		name: 'Prisma',
