@@ -1,4 +1,5 @@
 import accounts from '@/data/accounts';
+import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
 import { Chip } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +21,8 @@ function HomeSection() {
 						}
 					>
 						<span className='block leading-none mt-1'>
-							1+ Year of Professional Working Experience
+							{getTotalWorkingExperience()}+ Year of Professional Working
+							Experience
 						</span>
 					</Chip>
 				</div>
