@@ -28,6 +28,7 @@
 		"@types/lodash": "^4.14.202",
 		"@types/react-icons": "^3.0.0",
 		"axios": "^1.6.2",
+		"dotenv": "^16.3.1",
 		"flowbite": "^2.2.0",
 		"flowbite-react": "^0.7.0",
 		"framer-motion": "^10.16.16",
