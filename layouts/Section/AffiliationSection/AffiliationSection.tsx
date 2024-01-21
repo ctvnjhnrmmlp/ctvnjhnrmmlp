@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 function AffiliationSection() {
 	return (
-		<section className='min-h-screen md:w-full'>
+		<section className='md:w-full'>
 			<div className='flex flex-col gap-10'>
 				{affiliations.map((affiliation) => (
 					<Link key={affiliation.name} href={affiliation.url} target='_blank'>
@@ -31,14 +31,6 @@ function AffiliationSection() {
 									{affiliation.position}
 								</h3>
 							</CardBody>
-							{/* <CardFooter className='flex flex-col gap-2'>
-								<Chip
-									className='bg-white text-black text-lg font-bold'
-									radius='sm'
-								>
-									{affiliation.duration}
-								</Chip>
-							</CardFooter> */}
 						</Card>
 					</Link>
 				))}
