@@ -27,6 +27,7 @@ import {
 	SiPrisma,
 	SiPwa,
 	SiSocketdotio,
+	SiSolidity,
 	SiSpringboot,
 	SiTailwindcss,
 	SiTrpc,
@@ -57,6 +58,11 @@ const technologies = [
 		name: 'Python',
 		url: 'https://www.python.org/',
 		icon: FaPython,
+	},
+	{
+		name: 'Solidity',
+		url: 'https://soliditylang.org/',
+		icon: SiSolidity,
 	},
 	{
 		name: 'React',

@@ -1,5 +1,6 @@
 'use client';
 
+import AffiliationSection from '@/layouts/Section/AffiliationSection/AffiliationSection';
 import ExperienceSection from '@/layouts/Section/ExperienceSection/ExperienceSection';
 import HomeSection from '@/layouts/Section/HomeSection/HomeSection';
 import ProfessionSection from '@/layouts/Section/ProfessionSection/ProfessionSection';
@@ -12,6 +13,7 @@ function Home() {
 			<HomeSection />
 			<ProfessionSection />
 			<ExperienceSection />
+			<AffiliationSection />
 			<ProjectSection />
 			<WeblogSection />
 		</main>
