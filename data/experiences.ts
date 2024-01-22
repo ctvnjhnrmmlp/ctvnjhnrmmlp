@@ -23,7 +23,6 @@ const experiences = [
 		description: `I was instrumental in enhancing our ECommerce website's functionality and performance. Leveraging my skills in Bubble.io (No code), HTML, CSS, and JavaScript, I delivered responsive and visually appealing web interfaces that improved the user experience and increased conversions. I excelled in building and optimizing REST APIs, utilizing Postman for thorough testing and validation. This ensured seamless data communication with third-party services and contributed to the website's reliability and efficiency. My experience with Agile Methodology allowed me to work in cross-functional teams, ensuring a collaborative and iterative development process. I consistently met project milestones, delivering high-quality features and updates on schedule. My contributions extended beyond code.`,
 		url: 'raicom.com',
 	},
-
 	{
 		position: 'Full Stack Developer',
 		company: 'QX Information Technology Corp',
