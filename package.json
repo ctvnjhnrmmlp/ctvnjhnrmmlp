@@ -9,9 +9,6 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@mantine/carousel": "^7.3.1",
-		"@mantine/core": "^7.3.1",
-		"@mantine/hooks": "^7.3.1",
 		"@nextui-org/button": "^2.0.26",
 		"@nextui-org/card": "^2.0.24",
 		"@nextui-org/chip": "^2.0.25",
@@ -29,8 +26,6 @@
 		"@types/react-icons": "^3.0.0",
 		"axios": "^1.6.2",
 		"dotenv": "^16.3.1",
-		"flowbite": "^2.2.0",
-		"flowbite-react": "^0.7.0",
 		"framer-motion": "^10.16.16",
 		"lodash": "^4.17.21",
 		"next": "13.5.6",
