@@ -1,4 +1,4 @@
-import { BsFillBootstrapFill, BsGit } from 'react-icons/bs';
+import { BsFillBootstrapFill, BsGit, BsUnity } from 'react-icons/bs';
 import {
 	FaAngular,
 	FaJava,
@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import {
 	SiAmazonaws,
+	SiAndroidstudio,
 	SiApollographql,
 	SiCss3,
 	SiDebian,
@@ -189,6 +190,12 @@ const technologies = [
 		main: false,
 	},
 	{
+		name: 'Android Studio',
+		url: 'https://developer.android.com/studio',
+		icon: SiAndroidstudio,
+		main: false,
+	},
+	{
 		name: 'Progressive Web Apps',
 		url: 'https://web.dev/explore/progressive-web-apps',
 		icon: SiPwa,
@@ -283,6 +290,12 @@ const technologies = [
 		url: 'https://figma.com/',
 		icon: SiFigma,
 		main: true,
+	},
+	{
+		name: 'Unity',
+		url: 'https://unity.com/',
+		icon: BsUnity,
+		main: false,
 	},
 ];
 
