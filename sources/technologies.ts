@@ -11,11 +11,14 @@ import {
 import {
 	SiAmazonaws,
 	SiApollographql,
+	SiCss3,
 	SiDebian,
 	SiDocker,
 	SiExpress,
 	SiFastapi,
+	SiFigma,
 	SiGraphql,
+	SiHtml5,
 	SiIonic,
 	SiJavascript,
 	SiKubernetes,
@@ -27,6 +30,7 @@ import {
 	SiPostgresql,
 	SiPrisma,
 	SiPwa,
+	SiSass,
 	SiSocketdotio,
 	SiSolidity,
 	SiSpringboot,
@@ -41,8 +45,26 @@ import { TbBrandReactNative } from 'react-icons/tb';
 
 const technologies = [
 	{
+		name: 'HTML5',
+		url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+		icon: SiHtml5,
+		main: true,
+	},
+	{
+		name: 'CSS3',
+		url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+		icon: SiCss3,
+		main: true,
+	},
+	{
+		name: 'Sass',
+		url: 'https://sass-lang.com/',
+		icon: SiSass,
+		main: true,
+	},
+	{
 		name: 'JavaScript',
-		url: 'https://www.typescriptlang.org/',
+		url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 		icon: SiJavascript,
 		main: true,
 	},
@@ -255,6 +277,12 @@ const technologies = [
 		url: 'https://aws.amazon.com/',
 		icon: SiAmazonaws,
 		main: false,
+	},
+	{
+		name: 'Figma',
+		url: 'https://figma.com/',
+		icon: SiFigma,
+		main: true,
 	},
 ];
 
