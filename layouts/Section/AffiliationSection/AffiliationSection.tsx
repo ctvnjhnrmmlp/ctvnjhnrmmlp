@@ -1,17 +1,11 @@
-import {
-	Card,
-	CardBody,
-	CardFooter,
-	CardHeader,
-	Chip,
-} from '@nextui-org/react';
+import { Card, CardBody, CardHeader } from '@nextui-org/react';
 
 import affiliations from '@/sources/affiliations';
 import Link from 'next/link';
 
 function AffiliationSection() {
 	return (
-		<section className='md:w-full'>
+		<section className='flex flex-col md:w-full min-h-screen justify-center'>
 			<div className='flex flex-col gap-10'>
 				{affiliations.map((affiliation) => (
 					<Link key={affiliation.name} href={affiliation.url} target='_blank'>

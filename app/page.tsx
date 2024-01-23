@@ -3,14 +3,16 @@ import ExperienceSection from '@/layouts/Section/ExperienceSection/ExperienceSec
 import HomeSection from '@/layouts/Section/HomeSection/HomeSection';
 import ProfessionSection from '@/layouts/Section/ProfessionSection/ProfessionSection';
 import ProjectSection from '@/layouts/Section/ProjectSection/ProjectSection';
+import TechnologySection from '@/layouts/Section/TechnologySection/TechnologySection';
 import WeblogSection from '@/layouts/Section/WeblogSection/WeblogSection';
 
 function Home() {
 	return (
-		<main className='flex gap-40 min-h-screen flex-col items-center justify-between p-32'>
+		<main className='flex gap-48 min-h-screen flex-col items-center justify-between p-32'>
 			<HomeSection />
 			<ProfessionSection />
 			<ExperienceSection />
+			<TechnologySection />
 			<AffiliationSection />
 			<ProjectSection />
 			<WeblogSection />

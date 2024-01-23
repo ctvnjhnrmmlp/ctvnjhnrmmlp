@@ -1,10 +1,10 @@
 'use client';
 
-import weblogs from '@/sources/weblogs';
-import { getBlogs } from '@/libraries/axios/axios';
 import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react';
+
+import { getBlogs } from '@/libraries/axios/axios';
+import weblogs from '@/sources/weblogs';
 import { useQuery } from '@tanstack/react-query';
-import Image from 'next/image';
 import Link from 'next/link';
 
 function WeblogSection() {

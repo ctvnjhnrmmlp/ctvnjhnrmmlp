@@ -1,8 +1,8 @@
 import './globals.css';
 
-import professions from '@/sources/professions';
 import Footer from '@/layouts/Footer/Footer';
 import Nav from '@/layouts/Nav/Nav';
+import professions from '@/sources/professions';
 import getJoinedStringComma from '@/utilities/getJoinedStringComma';
 import getJoinedStringPeriod from '@/utilities/getJoinedStringPeriod';
 import { ScrollShadow } from '@nextui-org/react';
@@ -69,11 +69,7 @@ export const metadata: Metadata = {
 	classification: `${getJoinedStringComma(professions).toLowerCase()}`,
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' className='select-none duration-1000'>
 			<body className={`${inter.className} relative no-scrollbar`}>
@@ -88,3 +84,5 @@ export default function RootLayout({
 		</html>
 	);
 }
+
+export default RootLayout;
