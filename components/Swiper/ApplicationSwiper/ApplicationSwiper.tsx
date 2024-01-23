@@ -5,7 +5,7 @@ import 'swiper/css/effect-creative';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import applications from '@/data/applications';
+import applications from '@/sources/applications';
 import _ from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';

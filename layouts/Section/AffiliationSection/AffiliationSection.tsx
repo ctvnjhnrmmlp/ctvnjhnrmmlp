@@ -6,7 +6,7 @@ import {
 	Chip,
 } from '@nextui-org/react';
 
-import affiliations from '@/data/affiliations';
+import affiliations from '@/sources/affiliations';
 import Link from 'next/link';
 
 function AffiliationSection() {

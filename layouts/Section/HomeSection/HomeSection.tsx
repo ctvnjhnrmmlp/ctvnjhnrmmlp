@@ -1,4 +1,4 @@
-import accounts from '@/data/accounts';
+import accounts from '@/sources/accounts';
 import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
 import { Chip } from '@nextui-org/react';
 import Image from 'next/image';

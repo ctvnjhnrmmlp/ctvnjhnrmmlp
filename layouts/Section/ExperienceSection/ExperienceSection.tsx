@@ -7,7 +7,7 @@ import {
 	Chip,
 } from '@nextui-org/react';
 
-import experiences from '@/data/experiences';
+import experiences from '@/sources/experiences';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 import { RiRadioButtonLine } from 'react-icons/ri';

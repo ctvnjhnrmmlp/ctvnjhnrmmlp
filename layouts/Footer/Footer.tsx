@@ -1,6 +1,6 @@
 'use client';
 
-import accounts from '@/data/accounts';
+import accounts from '@/sources/accounts';
 import { Button } from '@nextui-org/button';
 import Link from 'next/link';
 

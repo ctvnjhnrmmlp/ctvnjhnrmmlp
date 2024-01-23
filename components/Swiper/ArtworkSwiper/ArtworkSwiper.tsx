@@ -5,7 +5,7 @@ import 'swiper/css/effect-cards';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import artworks from '@/data/artworks';
+import artworks from '@/sources/artworks';
 import _ from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';

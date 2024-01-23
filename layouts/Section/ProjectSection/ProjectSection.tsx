@@ -1,6 +1,6 @@
 import ApplicationSwiper from '@/components/Swiper/ApplicationSwiper/ApplicationSwiper';
 import ArtworkSwiper from '@/components/Swiper/ArtworkSwiper/ArtworkSwiper';
-import technologies from '@/data/technologies';
+import technologies from '@/sources/technologies';
 import { Button } from '@nextui-org/react';
 import _ from 'lodash';
 import Link from 'next/link';

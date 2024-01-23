@@ -1,4 +1,4 @@
-import professions from '@/data/professions';
+import professions from '@/sources/professions';
 
 function ProfessionSection() {
 	return (

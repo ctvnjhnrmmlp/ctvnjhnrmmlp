@@ -1,6 +1,6 @@
 'use client';
 
-import weblogs from '@/data/weblogs';
+import weblogs from '@/sources/weblogs';
 import { getBlogs } from '@/libraries/axios/axios';
 import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react';
 import { useQuery } from '@tanstack/react-query';

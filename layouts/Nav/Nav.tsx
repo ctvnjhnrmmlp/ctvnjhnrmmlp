@@ -4,7 +4,7 @@ import { Navbar, NavbarContent, NavbarItem } from '@nextui-org/react';
 import { useEffect, useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-import sections from '@/data/sections';
+import sections from '@/sources/sections';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 

@@ -1,6 +1,6 @@
 import './globals.css';
 
-import professions from '@/data/professions';
+import professions from '@/sources/professions';
 import Footer from '@/layouts/Footer/Footer';
 import Nav from '@/layouts/Nav/Nav';
 import getJoinedStringComma from '@/utilities/getJoinedStringComma';
