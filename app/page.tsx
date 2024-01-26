@@ -1,10 +1,10 @@
-import AffiliationSection from '@/layouts/Section/AffiliationSection/AffiliationSection';
-import ExperienceSection from '@/layouts/Section/ExperienceSection/ExperienceSection';
-import HomeSection from '@/layouts/Section/HomeSection/HomeSection';
-import ProfessionSection from '@/layouts/Section/ProfessionSection/ProfessionSection';
-import ProjectSection from '@/layouts/Section/ProjectSection/ProjectSection';
-import TechnologySection from '@/layouts/Section/TechnologySection/TechnologySection';
-import WeblogSection from '@/layouts/Section/WeblogSection/WeblogSection';
+import AffiliationSection from '@/containers/Section/AffiliationSection/AffiliationSection';
+import ExperienceSection from '@/containers/Section/ExperienceSection/ExperienceSection';
+import HomeSection from '@/containers/Section/HomeSection/HomeSection';
+import ProfessionSection from '@/containers/Section/ProfessionSection/ProfessionSection';
+import ProjectSection from '@/containers/Section/ProjectSection/ProjectSection';
+import TechnologySection from '@/containers/Section/TechnologySection/TechnologySection';
+import WeblogSection from '@/containers/Section/WeblogSection/WeblogSection';
 
 function Home() {
 	return (
