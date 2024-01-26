@@ -34,7 +34,7 @@ function ExperienceSection() {
 					</Button>
 				</div>
 
-				<div className='flex flex-col gap-10'>
+				<div className='flex flex-col gap-12'>
 					{experiences.map((experience) => {
 						return (
 							<Link key={experience.url} href={experience.url} target='_blank'>
