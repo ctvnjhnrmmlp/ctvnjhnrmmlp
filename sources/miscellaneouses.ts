@@ -9,7 +9,7 @@ const miscellaneouses = [
 	},
 	{
 		content:
-			'Actively kept abreast of the latest advancements and industry trends in PWAs, ensuring the adoption of best practices and incorporating innovative features into projects',
+			'Actively kept abreast of the latest advancements and industry trends, ensuring the adoption of best practices and incorporating innovative features into projects',
 	},
 ];
 
