@@ -1,5 +1,7 @@
+import { Card, CardBody, Chip } from '@nextui-org/react';
+
+import miscellaneouses from '@/sources/miscellaneouses';
 import technologies from '@/sources/technologies';
-import { Chip } from '@nextui-org/react';
 import Link from 'next/link';
 
 function TechnologySection() {
@@ -62,6 +64,23 @@ function TechnologySection() {
 									<technology.icon />
 								</Link>
 							))}
+					</div>
+				</div>
+
+				<div>
+					<div className='flex flex-col gap-12'>
+						{miscellaneouses.map((miscellaneous) => (
+							<Card
+								key={miscellaneous.content}
+								className='dark:bg-black py-12 px-12 md:px-0 dark:border-[#3F3F46] rounded-xxl shadow-none border border-[#D4D4D8] gap-2'
+							>
+								<CardBody className='flex flex-col justify-center pt-2 pb-4'>
+									<p className='text-center w-full sm:w-10/12 lg:w-8/12 mx-auto text-lg md:text-2xl font-extralight'>
+										{miscellaneous.content}
+									</p>
+								</CardBody>
+							</Card>
+						))}
 					</div>
 				</div>
 			</div>
