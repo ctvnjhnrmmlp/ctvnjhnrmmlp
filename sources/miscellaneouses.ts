@@ -5,11 +5,11 @@ const miscellaneouses = [
 	},
 	{
 		content:
-			'Proficience in applying industry best practices, with a strong foundation in design principles such as SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)',
+			'Proficiency in applying industry best practices, with a strong foundation in design principles such as SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)',
 	},
 	{
 		content:
-			'Actively kept abreast of the latest advancements and industry trends, ensuring the adoption of best practices and incorporating innovative features into projects',
+			'Actively kept abreast of the latest advancements and industry trends, ensuring the adoption of best practices and incorporation of innovative features into projects',
 	},
 ];
 
