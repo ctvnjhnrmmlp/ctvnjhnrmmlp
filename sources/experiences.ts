@@ -20,7 +20,7 @@ const experiences = [
 		company: 'Raicom LLC',
 		duration: 'August 2023 - September 2023',
 		mode: 'Remote',
-		description: `Enhanced ECommerce website functionality and performance by leveraging Bubble.io (No code), HTML, CSS, and JavaScript. Delivered responsive web interfaces, improving user experience and increasing conversions, contributing to the website's reliability and efficiency. Excelled in building REST APIs with Postman for thorough testing and validation, ensuring seamless data communication with third-party services`,
+		description: `Enhanced ECommerce website functionality and performance by leveraging Bubble.io (No code), HTML, CSS, and JavaScript. Delivered responsive web interfaces, improving user experience and increasing conversions, contributing to the website's reliability and efficiency. Excelled in building REST APIs with Postman for thorough testing and validation, ensuring seamless data communication with third-party services.`,
 		url: 'raicom.com',
 	},
 	{
@@ -28,7 +28,7 @@ const experiences = [
 		company: 'QX Information Technology Corp',
 		duration: 'March 2023 - September 2023',
 		mode: 'Remote',
-		description: `Leveraged WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and industry-standard tools to meet client and business needs. Excelled in developing robust backend solutions with intricate functionalities and database structures, focusing on PHP and Laravel. Consistently contributed to project success by delivering dynamic web applications with engaging user interfaces, working closely with cross-functional teams, and meeting deadlines consistently`,
+		description: `Leveraged WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, Sass, and industry-standard tools to meet client and business needs. Excelled in developing robust backend solutions with intricate functionalities and database structures, focusing on PHP and Laravel. Consistently contributed to project success by delivering dynamic web applications with engaging user interfaces, working closely with cross-functional teams, and meeting deadlines consistently.`,
 		url: 'https://www.quantumx.com',
 	},
 	{
@@ -36,7 +36,7 @@ const experiences = [
 		company: 'Fusion Growth Partners',
 		duration: 'February 2023 - March 2023',
 		mode: 'Remote',
-		description: `Specializing in crafting exceptional user interfaces and improving experiences with HTML, CSS, and JavaScript. Utilizing iHouseCRM and Google Workspaces, I integrate data-driven elements and implement effective CRM solutions for enhanced user engagement and optimized business processes. Using tools like VS Code and Zoho, I streamline development while ensuring the timely delivery of high-quality front-end solutions`,
+		description: `Specializing in crafting exceptional user interfaces and improving experiences with HTML, CSS, and JavaScript. Utilizing iHouseCRM and Google Workspaces, I integrate data-driven elements and implement effective CRM solutions for enhanced user engagement and optimized business processes. Using tools like VS Code and Zoho, I streamline development while ensuring the timely delivery of high-quality front-end solutions.`,
 		url: 'https://www.growwithfusion.com',
 	},
 ];
