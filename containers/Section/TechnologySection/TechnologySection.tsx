@@ -72,7 +72,7 @@ function TechnologySection() {
 						{miscellaneouses.map((miscellaneous) => (
 							<Card
 								key={miscellaneous.content}
-								className='dark:bg-black py-12 px-12 md:px-0 dark:border-[#3F3F46] rounded-xxl shadow-none border border-[#D4D4D8] gap-2'
+								className='dark:bg-black pt-12 pb-9 px-12 md:px-0 dark:border-[#3F3F46] rounded-xxl shadow-none border border-[#D4D4D8] gap-2'
 							>
 								<CardBody className='flex flex-col justify-center pt-2 pb-4'>
 									<p className='text-center w-full sm:w-10/12 lg:w-8/12 mx-auto text-lg md:text-2xl font-extralight'>
