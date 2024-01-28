@@ -12,6 +12,7 @@ import {
 	SiAmazonaws,
 	SiAndroidstudio,
 	SiApollographql,
+	SiAstro,
 	SiCss3,
 	SiDebian,
 	SiDocker,
@@ -128,6 +129,12 @@ const technologies = [
 		url: 'https://nuxt.com/',
 		icon: SiNuxtdotjs,
 		main: false,
+	},
+	{
+		name: 'Astro',
+		url: 'https://astro.build/',
+		icon: SiAstro,
+		main: true,
 	},
 	{
 		name: 'GraphQL',
@@ -259,7 +266,7 @@ const technologies = [
 		name: 'Docker',
 		url: 'https://www.docker.com/',
 		icon: SiDocker,
-		main: false,
+		main: true,
 	},
 	{
 		name: 'Kubernetes',
