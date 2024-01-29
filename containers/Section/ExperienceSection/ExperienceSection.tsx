@@ -19,7 +19,7 @@ function ExperienceSection() {
 				<div className='flex justify-center'>
 					<Button
 						as={Link}
-						href='https://drive.google.com/file/d/1TPJiavx1VgTEcLRG5KufGZjPr9I6DDcs/view?usp=sharing'
+						href='https://rxresu.me/ctvnjhnrmmlp/resume'
 						target='_blank'
 						variant='bordered'
 						radius='full'
