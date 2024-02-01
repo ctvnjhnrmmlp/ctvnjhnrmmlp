@@ -11,6 +11,10 @@ const miscellaneouses = [
 		content:
 			'Actively kept abreast of the latest advancements and industry trends, ensuring the adoption of best practices and incorporation of innovative features into projects',
 	},
+	{
+		content:
+			'Skilled in utilizing Agile and Scrum methodologies to foster collaboration, improve project visibility, and deliver high-quality software products on schedule.',
+	},
 ];
 
 export default miscellaneouses;
