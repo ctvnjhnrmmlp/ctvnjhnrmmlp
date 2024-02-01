@@ -8,6 +8,7 @@ import {
 	FaReact,
 	FaWordpress,
 } from 'react-icons/fa';
+import { FaGolang } from 'react-icons/fa6';
 import {
 	SiAmazonaws,
 	SiAndroidstudio,
@@ -87,6 +88,12 @@ const technologies = [
 		url: 'https://www.java.com/en/',
 		icon: FaJava,
 		main: true,
+	},
+	{
+		name: 'Golang',
+		url: 'https://go.dev/',
+		icon: FaGolang,
+		main: false,
 	},
 	{
 		name: 'Python',
