@@ -1,7 +1,7 @@
 const experiences = [
 	{
 		position: 'Full Stack Developer',
-		company: 'PSI',
+		company: 'T.E.A.M DAO',
 		duration: 'September 2023 - Present',
 		mode: 'Remote',
 		description: `Excelled in developing and maintaining Decentralized Applications (dApps) and Web3 games using React JS, Next JS, and TailwindCSS for stunning, responsive interfaces. Enhanced real-time communication and data retrieval with SocketIO, GraphQL, Apollo, and Rest APIs, ensuring a seamless user experience. Ensured efficient coding, version control, and collaborative workflows using Visual Studio Code and Git, contributing to the success and innovation within the team.`,
