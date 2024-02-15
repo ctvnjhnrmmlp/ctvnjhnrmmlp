@@ -20,6 +20,7 @@ import {
 	SiExpress,
 	SiFastapi,
 	SiFigma,
+	SiGnubash,
 	SiGraphql,
 	SiHtml5,
 	SiIonic,
@@ -291,6 +292,12 @@ const technologies = [
 		name: 'Git',
 		url: 'https://git-scm.com/',
 		icon: BsGit,
+		main: true,
+	},
+	{
+		name: 'Bash',
+		url: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
+		icon: SiGnubash,
 		main: true,
 	},
 	{
