@@ -34,6 +34,7 @@ import {
 	SiPostgresql,
 	SiPrisma,
 	SiPwa,
+	SiPytorch,
 	SiSass,
 	SiSocketdotio,
 	SiSolidity,
@@ -298,6 +299,12 @@ const technologies = [
 		name: 'Bash',
 		url: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
 		icon: SiGnubash,
+		main: true,
+	},
+	{
+		name: 'PyTorch',
+		url: 'https://pytorch.org/',
+		icon: SiPytorch,
 		main: true,
 	},
 	{
