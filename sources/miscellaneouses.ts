@@ -13,7 +13,11 @@ const miscellaneouses = [
 	},
 	{
 		content:
-			'Skilled in utilizing Agile and Scrum methodologies to foster collaboration, improve project visibility, and deliver high-quality software products on schedule.',
+			'Skilled in utilizing Agile and Scrum methodologies to foster collaboration, improve project visibility, and deliver high-quality software products on schedule',
+	},
+	{
+		content:
+			'Capable in DevOps methodologies and tools, adept at automating processes for seamless collaboration between development and operations teams',
 	},
 ];
 
