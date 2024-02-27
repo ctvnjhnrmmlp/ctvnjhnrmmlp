@@ -42,6 +42,7 @@ import {
 	SiTailwindcss,
 	SiTrpc,
 	SiTypescript,
+	SiWeb3Dotjs,
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
@@ -299,6 +300,12 @@ const technologies = [
 		name: 'Bash',
 		url: 'https://en.wikipedia.org/wiki/Bash_(Unix_shell)',
 		icon: SiGnubash,
+		main: true,
+	},
+	{
+		name: 'Web3js',
+		url: 'https://web3js.org/',
+		icon: SiWeb3Dotjs,
 		main: true,
 	},
 	{
