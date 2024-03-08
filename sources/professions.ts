@@ -1,7 +1,7 @@
 const professions = [
 	'Software Engineer',
-	'Web3 Developer',
-	'Mobile Developer',
+	'Blockchain Developer',
+	'Machine Learning Engineer',
 	'UI/UX Designer',
 	'Technical Blogger',
 ];
