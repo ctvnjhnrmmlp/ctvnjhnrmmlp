@@ -8,7 +8,6 @@ import {
 	FaReact,
 	FaWordpress,
 } from 'react-icons/fa';
-import { FaGolang } from 'react-icons/fa6';
 import {
 	SiAmazonaws,
 	SiAndroidstudio,
@@ -40,11 +39,13 @@ import {
 	SiSolidity,
 	SiSpringboot,
 	SiTailwindcss,
+	SiTelegram,
 	SiTrpc,
 	SiTypescript,
 	SiWeb3Dotjs,
 } from 'react-icons/si';
 
+import { FaGolang } from 'react-icons/fa6';
 import { GrMysql } from 'react-icons/gr';
 import { IoLogoVue } from 'react-icons/io5';
 import { TbBrandReactNative } from 'react-icons/tb';
@@ -252,6 +253,12 @@ const technologies = [
 		name: 'Socket.IO',
 		url: 'https://socket.io/',
 		icon: SiSocketdotio,
+		main: true,
+	},
+	{
+		name: 'grammY',
+		url: 'https://grammy.dev',
+		icon: SiTelegram,
 		main: true,
 	},
 	{
