@@ -29,6 +29,7 @@ import {
 	SiMongoose,
 	SiNextdotjs,
 	SiNuxtdotjs,
+	SiOpenai,
 	SiPhp,
 	SiPostgresql,
 	SiPrisma,
@@ -247,6 +248,12 @@ const technologies = [
 		name: 'MongoDB',
 		url: 'https://www.mongodb.com/',
 		icon: SiMongodb,
+		main: true,
+	},
+	{
+		name: 'OpenAI',
+		url: 'https://openai.com/',
+		icon: SiOpenai,
 		main: true,
 	},
 	{
