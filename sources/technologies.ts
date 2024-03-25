@@ -6,6 +6,7 @@ import {
 	FaNodeJs,
 	FaPython,
 	FaReact,
+	FaRust,
 	FaWordpress,
 } from 'react-icons/fa';
 import {
@@ -104,6 +105,12 @@ const technologies = [
 		name: 'Python',
 		url: 'https://www.python.org/',
 		icon: FaPython,
+		main: true,
+	},
+	{
+		name: 'Rust',
+		url: 'https://www.rust-lang.org/',
+		icon: FaRust,
 		main: true,
 	},
 	{
