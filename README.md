@@ -1,6 +1,6 @@
 # John Rommel Octaviano
 
-**Software Engineer | Blockchain Developer | Machine Learning Engineer | DevOps Engineer | UI/UX Designer**
+**Software Engineer. Blockchain Developer. UI/UX Designer. Technical Blogger.**
 
 A software engineer with a passion for shaping the digital landscape, I specialize in Web3 development, mobile app creation, and UI/UX design. I seamlessly blend technical expertise with a keen eye for user-centric design.
 
