@@ -23,6 +23,7 @@ import {
 	SiGraphql,
 	SiHtml5,
 	SiIonic,
+	SiIpfs,
 	SiJavascript,
 	SiKubernetes,
 	SiMongodb,
@@ -290,6 +291,12 @@ const technologies = [
 		name: 'Docker',
 		url: 'https://www.docker.com/',
 		icon: SiDocker,
+		main: true,
+	},
+	{
+		name: 'IPFS',
+		url: 'https://ipfs.tech/',
+		icon: SiIpfs,
 		main: true,
 	},
 	{
