@@ -13,6 +13,7 @@ import {
 	SiAndroidstudio,
 	SiApollographql,
 	SiAstro,
+	SiCsharp,
 	SiCss3,
 	SiDebian,
 	SiDocker,
@@ -93,6 +94,12 @@ const technologies = [
 		name: 'Java',
 		url: 'https://www.java.com/en/',
 		icon: FaJava,
+		main: true,
+	},
+	{
+		name: 'C#',
+		url: 'https://dotnet.microsoft.com/en-us/languages/csharp',
+		icon: SiCsharp,
 		main: true,
 	},
 	{
