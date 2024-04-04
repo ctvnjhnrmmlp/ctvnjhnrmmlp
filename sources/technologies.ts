@@ -17,6 +17,7 @@ import {
 	SiCss3,
 	SiDebian,
 	SiDocker,
+	SiEthereum,
 	SiExpress,
 	SiFastapi,
 	SiFigma,
@@ -32,6 +33,7 @@ import {
 	SiNextdotjs,
 	SiNuxtdotjs,
 	SiOpenai,
+	SiOpencv,
 	SiPhp,
 	SiPostgresql,
 	SiPrisma,
@@ -47,11 +49,11 @@ import {
 	SiTypescript,
 	SiWeb3Dotjs,
 } from 'react-icons/si';
+import { TbBrandReactNative, TbCurrencySolana } from 'react-icons/tb';
 
 import { FaGolang } from 'react-icons/fa6';
 import { GrMysql } from 'react-icons/gr';
 import { IoLogoVue } from 'react-icons/io5';
-import { TbBrandReactNative } from 'react-icons/tb';
 
 const technologies = [
 	{
@@ -331,6 +333,18 @@ const technologies = [
 		main: true,
 	},
 	{
+		name: 'Ethereum',
+		url: 'https://ethereum.org/en/',
+		icon: SiEthereum,
+		main: true,
+	},
+	{
+		name: 'Solana',
+		url: 'https://solana.com/',
+		icon: TbCurrencySolana,
+		main: true,
+	},
+	{
 		name: 'Web3js',
 		url: 'https://web3js.org/',
 		icon: SiWeb3Dotjs,
@@ -340,6 +354,12 @@ const technologies = [
 		name: 'PyTorch',
 		url: 'https://pytorch.org/',
 		icon: SiPytorch,
+		main: true,
+	},
+	{
+		name: 'OpenCV',
+		url: 'https://opencv.org/',
+		icon: SiOpencv,
 		main: true,
 	},
 	{
