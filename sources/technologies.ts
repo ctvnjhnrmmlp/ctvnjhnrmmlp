@@ -31,9 +31,10 @@ import {
 	SiMongodb,
 	SiMongoose,
 	SiNextdotjs,
+	SiNumpy,
 	SiNuxtdotjs,
 	SiOpenai,
-	SiOpencv,
+	SiPandas,
 	SiPhp,
 	SiPostgresql,
 	SiPrisma,
@@ -48,6 +49,7 @@ import {
 	SiTrpc,
 	SiTypescript,
 	SiWeb3Dotjs,
+	SiWebrtc,
 } from 'react-icons/si';
 import { TbBrandReactNative, TbCurrencySolana } from 'react-icons/tb';
 
@@ -357,9 +359,15 @@ const technologies = [
 		main: true,
 	},
 	{
-		name: 'OpenCV',
-		url: 'https://opencv.org/',
-		icon: SiOpencv,
+		name: 'NumPY',
+		url: 'https://numpy.org/',
+		icon: SiNumpy,
+		main: true,
+	},
+	{
+		name: 'Pandas',
+		url: 'https://pandas.pydata.org/',
+		icon: SiPandas,
 		main: true,
 	},
 	{
