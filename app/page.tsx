@@ -3,7 +3,7 @@
 import accounts from '@/sources/accounts';
 import weblogs from '@/sources/weblogs';
 import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
-import { Card, CardBody, CardFooter, Chip } from '@nextui-org/react';
+import { Card, CardBody, Chip } from '@nextui-org/react';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 
@@ -36,12 +36,12 @@ export default function Home() {
 					}}
 				>
 					<CardBody>
-						<h1 className='text-4xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tight  [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
+						<h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tight  [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
 							John Rommel Octaviano
 						</h1>
 					</CardBody>
 				</Card>
-				<div className='flex flex-wrap gap-2 md:gap-4 lg:gap-6 justify-center lg:justify-between'>
+				<div className='flex flex-wrap gap-4 lg:gap-6 justify-center lg:justify-between'>
 					{accounts.map((account) => (
 						<button
 							key={account.name}
@@ -84,7 +84,7 @@ export default function Home() {
 								<Chip
 									variant='bordered'
 									size='lg'
-									className='text-xs sm:text-sm md:text-lg border-1 px-1 py-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center'
+									className='text-xs sm:text-sm md:text-lg border-1 p-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center'
 									startContent={
 										<p className='p-1'>
 											{experience.current && <RiSparkling2Fill />}
@@ -116,7 +116,7 @@ export default function Home() {
 							}}
 						>
 							<CardBody>
-								<h3 className='text-3xl sm:text-4xl md:text-5xl lg:text-7xl uppercase text-center leading-none tracking-tight [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
+								<h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
 									{profession.name}
 								</h3>
 							</CardBody>
