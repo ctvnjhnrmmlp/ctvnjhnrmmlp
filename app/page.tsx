@@ -172,7 +172,10 @@ export default function Home() {
 				</div>
 				<div className='flex flex-wrap justify-center md:justify-start space-x-2 md:space-x-6'>
 					{weblogs.map((weblog) => (
-						<button className='py-2 px-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center bg-background'>
+						<button
+							key={weblog.url}
+							className='py-2 px-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center bg-background'
+						>
 							<weblog.icon />
 						</button>
 					))}
