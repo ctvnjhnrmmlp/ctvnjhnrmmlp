@@ -1,5 +1,5 @@
 const getTotalWorkingExperience = () => {
-	const startDate = new Date('2023-02-01');
+	const startDate = new Date('2023-03-06');
 	const currentDate = new Date();
 	// @ts-ignore
 	const timeDifference = currentDate - startDate;

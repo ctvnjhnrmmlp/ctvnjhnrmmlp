@@ -1,29 +1,39 @@
+import { nextui } from '@nextui-org/react';
 import type { Config } from 'tailwindcss';
-
-const { nextui } = require('@nextui-org/react');
+import COLORS from './configurations/colors';
 
 const config: Config = {
 	content: [
-		'./(app|components|containers|layouts)/**/*.{js,ts,jsx,tsx,mdx}',
+		'./(app|components|layouts)/**/*.{js,ts,jsx,tsx,mdx}',
 		'./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		extend: {
-			fontSize: {
-				'heading-one-large': 'clamp(7.27rem, 9.75rem + 2.56vw, 8.58rem)',
-				'heading-two-large': 'clamp(3.27rem, 2.75rem + 2.56vw, 5.58rem)',
-			},
-			borderRadius: {
-				xxl: '50px',
-			},
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-			},
+		backgroundImage: {
+			'self-abstract': "url('/images/self-abstract.webp')",
+			'application': "url('/images/application.png')",
+			'blockchain': "url('/images/blockchain.png')",
+			'cloud': "url('/images/cloud.png')",
+			'devops': "url('/images/devops.png')",
+			'machine-learning': "url('/images/machine-learning.png')",
 		},
 	},
 	darkMode: 'class',
-	plugins: [nextui()],
+	plugins: [
+		nextui({
+			defaultTheme: 'dark',
+			themes: {
+				light: {},
+				dark: {},
+				ctvnjhnrmmlp: {
+					extend: 'dark',
+					colors: {
+						background: COLORS.alpha,
+						foreground: COLORS.bravo,
+					},
+				},
+			},
+		}),
+	],
 };
+
 export default config;
