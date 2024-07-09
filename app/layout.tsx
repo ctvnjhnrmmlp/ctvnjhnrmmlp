@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 
+import Content from '@/components/compounds/Content/Content';
 import FONTS from '@/configurations/fonts';
 import { METADATA } from '@/configurations/metadata';
 import type { Metadata } from 'next';
@@ -15,7 +16,9 @@ export default function RootLayout({
 	return (
 		<html lang='en' className='select-none no-scrollbar'>
 			<body className={`${FONTS.alpha.className}`}>
-				<Providers>{children}</Providers>
+				<Providers>
+					<Content>{children}</Content>
+				</Providers>
 			</body>
 		</html>
 	);
