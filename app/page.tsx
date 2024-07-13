@@ -16,7 +16,6 @@ import { RiSparkling2Fill } from 'react-icons/ri';
 export default function Home() {
 	return (
 		<main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#181818]'>
-			{/* px-28 sm:px-24 py-24 */}
 			<section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 sm:px-24 py-24'>
 				<div className='px-2 sm:px-0'>
 					<Card
@@ -52,7 +51,9 @@ export default function Home() {
 							key={account.name}
 							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center bg-background'
 						>
-							<account.icon />
+							<Link href={account.url} target='_blank'>
+								<account.icon />
+							</Link>
 						</button>
 					))}
 					<button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow bg-background'>

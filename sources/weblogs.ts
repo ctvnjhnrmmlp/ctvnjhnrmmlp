@@ -1,11 +1,6 @@
-import { FaStar } from 'react-icons/fa';
 import { SiDevdotto, SiHackernoon, SiHashnode, SiMedium } from 'react-icons/si';
 
 const weblogs = [
-	{
-		url: 'https://the-logs.vercel.app/',
-		icon: FaStar,
-	},
 	{
 		url: 'https://ctvnjhnrmmlp.hashnode.dev/',
 		icon: SiHashnode,
