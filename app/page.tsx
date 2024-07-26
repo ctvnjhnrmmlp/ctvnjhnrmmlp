@@ -154,26 +154,27 @@ export default function Home() {
 						</CardBody>
 					</Card>
 				</div>
-				<div className='flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center md:justify-start gap-6 md:gap-4 lg:gap-6'>
+				<div className='flex flex-col lg:flex-row flex-wrap justify-center md:justify-start gap-6 md:gap-4 lg:gap-6'>
 					{AFFILIATIONS.map((affiliation) => (
-						<Card
-							key={affiliation.name}
-							classNames={{
-								base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
-								body: 'py-12 sm:py-16 px-6 md:px-8 lg:px-10 flex flex-col items-center justify-center rounded-3xl text-center overflow-hidden space-y-1',
-							}}
-						>
-							<CardBody>
-								<h3 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight'>
-									{affiliation.shortname}
-								</h3>
-								<div className='p-1 rounded-lg backdrop-blur-sm bg-white/6 border-white/20 border-1'>
-									<p className='text-xs sm:text-sm line-clamp-2'>
-										{affiliation.name}
-									</p>
-								</div>
-							</CardBody>
-						</Card>
+						<Link key={affiliation.name} href={affiliation.url} target='_blank'>
+							<Card
+								classNames={{
+									base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
+									body: 'py-12 sm:py-16 px-6 md:px-8 lg:px-10 flex flex-col items-center justify-center rounded-3xl text-center overflow-hidden space-y-1',
+								}}
+							>
+								<CardBody>
+									<h3 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight'>
+										{affiliation.shortname}
+									</h3>
+									<div className='p-1 rounded-lg backdrop-blur-sm bg-white/6 border-white/20 border-1'>
+										<p className='text-xs sm:text-sm line-clamp-2'>
+											{affiliation.name}
+										</p>
+									</div>
+								</CardBody>
+							</Card>
+						</Link>
 					))}
 				</div>
 				<div className='flex flex-wrap justify-center space-x-2 md:space-x-6'>

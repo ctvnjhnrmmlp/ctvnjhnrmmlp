@@ -1,23 +1,28 @@
 const AFFILIATIONS = [
 	{
-		name: 'AWS Cloud Club - University of Cabuyao',
-		shortname: 'AWSCCUC',
-		url: 'https://www.facebook.com/profile.php?id=61554309601789',
+		name: 'University of Cabuyao',
+		shortname: 'AWS Cloud Club',
+		url: 'https://www.linkedin.com/in/awscc-uc/',
 	},
 	{
-		name: 'Junior Blockchain Education Consortium of the Philippines',
-		shortname: 'JBECPD',
-		url: 'https://www.facebook.com/profile.php?id=61554309601789',
+		name: 'Philippines',
+		shortname: 'AWS User Group',
+		url: 'https://www.linkedin.com/company/aws-user-group-philippines/mycompany/',
 	},
 	{
-		name: 'AWS User Group Philippines',
-		shortname: 'AWSUGPH',
-		url: 'https://www.facebook.com/profile.php?id=61554309601789',
+		name: 'Laguna Chapter',
+		shortname: 'DevCon',
+		url: 'https://www.linkedin.com/company/devconlaguna/mycompany/',
+	},
+	{
+		name: 'Philippines',
+		shortname: 'PWA Pilipinas',
+		url: 'https://www.linkedin.com/company/pwa-pilipinas/',
 	},
 	{
 		name: 'Filipino Web Development Peers',
 		shortname: 'FWDP',
-		url: 'https://www.facebook.com/fwdpeers/',
+		url: 'https://www.linkedin.com/company/fwdp/',
 	},
 ];
 
