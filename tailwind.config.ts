@@ -10,11 +10,6 @@ const config: Config = {
 	theme: {
 		backgroundImage: {
 			'self-abstract': "url('/images/self-abstract.webp')",
-			'application': "url('/images/application.png')",
-			'blockchain': "url('/images/blockchain.png')",
-			'cloud': "url('/images/cloud.png')",
-			'devops': "url('/images/devops.png')",
-			'machine-learning': "url('/images/machine-learning.png')",
 		},
 	},
 	darkMode: 'class',

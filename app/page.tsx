@@ -1,16 +1,16 @@
 'use client';
 
-import accounts from '@/sources/accounts';
+import ACCOUNTS from '@/sources/accounts';
 import TECHNOLOGIES from '@/sources/technologies';
-import weblogs from '@/sources/weblogs';
+import WEBLOGS from '@/sources/weblogs';
 import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
 import { Card, CardBody, Chip } from '@nextui-org/react';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 
-import affiliations from '@/sources/affiliations';
-import experiences from '@/sources/experiences';
-import professions from '@/sources/professions';
+import AFFILIATIONS from '@/sources/affiliations';
+import EXPRIENCES from '@/sources/experiences';
+import PROFESSIONS from '@/sources/professions';
 import { GoDotFill } from 'react-icons/go';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
@@ -47,7 +47,7 @@ export default function Home() {
 					</Card>
 				</div>
 				<div className='flex flex-wrap gap-4 lg:gap-6 justify-center lg:justify-between'>
-					{accounts.map((account) => (
+					{ACCOUNTS.map((account) => (
 						<button
 							key={account.name}
 							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 '
@@ -73,7 +73,7 @@ export default function Home() {
 					</button>
 				</div>
 				<div className='grid xl:grid-cols-2 gap-6 md:gap-4 lg:gap-6'>
-					{experiences.map((experience) => (
+					{EXPRIENCES.map((experience) => (
 						<Card
 							key={experience.company}
 							classNames={{
@@ -112,19 +112,16 @@ export default function Home() {
 					))}
 				</div>
 				<div className='flex flex-col xl:flex-row flex-wrap gap-6 md:gap-4 lg:gap-6'>
-					{professions.map((profession) => (
+					{PROFESSIONS.map((profession) => (
 						<Card
 							key={profession.name}
 							classNames={{
-								base: `rounded-3xl bg-no-repeat bg-cover bg-center flex-grow shadow-none border-white/20 border-1`,
+								base: `rounded-3xl flex-grow shadow-none backdrop-blur-sm bg-white/5 border-white/20 border-1`,
 								body: 'py-20 sm:py-24 flex flex-col space-y-4',
-							}}
-							style={{
-								backgroundImage: `url(/images/${profession.slug}.png)`,
 							}}
 						>
 							<CardBody>
-								<h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
+								<h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight'>
 									{profession.name}
 								</h3>
 							</CardBody>
@@ -139,7 +136,7 @@ export default function Home() {
 						}}
 					>
 						<CardBody>
-							<div className='flex flex-wrap justify-center md:justify-start gap-4 px-2 md:px-6'>
+							<div className='flex flex-wrap justify-center gap-4 px-2 md:px-6'>
 								{TECHNOLOGIES.map((technology) => (
 									<Link
 										key={technology.name}
@@ -158,12 +155,12 @@ export default function Home() {
 					</Card>
 				</div>
 				<div className='flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center md:justify-start gap-6 md:gap-4 lg:gap-6'>
-					{affiliations.map((affiliation) => (
+					{AFFILIATIONS.map((affiliation) => (
 						<Card
 							key={affiliation.name}
 							classNames={{
 								base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
-								body: 'py-12 sm:py-16 px-6 md:px-8 lg:px-10 flex flex-col items-center justify-center rounded-3xl text-center overflow-hidden',
+								body: 'py-12 sm:py-16 px-6 md:px-8 lg:px-10 flex flex-col items-center justify-center rounded-3xl text-center overflow-hidden space-y-1',
 							}}
 						>
 							<CardBody>
@@ -180,7 +177,7 @@ export default function Home() {
 					))}
 				</div>
 				<div className='flex flex-wrap justify-center space-x-2 md:space-x-6'>
-					{weblogs.map((weblog) => (
+					{WEBLOGS.map((weblog) => (
 						<button
 							key={weblog.url}
 							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1'

@@ -1,4 +1,4 @@
-const experiences = [
+const EXPERIENCES = [
 	{
 		position: 'Software Engineer',
 		company: 'T.E.A.M DAO',
@@ -21,4 +21,4 @@ const experiences = [
 	},
 ];
 
-export default experiences;
+export default EXPERIENCES;

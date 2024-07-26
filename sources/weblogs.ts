@@ -1,6 +1,6 @@
 import { SiDevdotto, SiHackernoon, SiHashnode, SiMedium } from 'react-icons/si';
 
-const weblogs = [
+const WEBLOGS = [
 	{
 		url: 'https://ctvnjhnrmmlp.hashnode.dev/',
 		icon: SiHashnode,
@@ -19,4 +19,4 @@ const weblogs = [
 	},
 ];
 
-export default weblogs;
+export default WEBLOGS;

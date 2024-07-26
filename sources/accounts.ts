@@ -8,7 +8,7 @@ import {
 
 import { SiLinktree } from 'react-icons/si';
 
-const accounts = [
+const ACCOUNTS = [
 	{
 		name: 'Linkedin',
 		url: 'https://linkedin.com/in/ctvnjhnrmmlp',
@@ -41,4 +41,4 @@ const accounts = [
 	},
 ];
 
-export default accounts;
+export default ACCOUNTS;
