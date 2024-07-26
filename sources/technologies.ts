@@ -3,37 +3,27 @@ import {
 	FaAngular,
 	FaJava,
 	FaLaravel,
-	FaNodeJs,
 	FaPython,
 	FaReact,
 } from 'react-icons/fa';
 import {
 	SiAmazonaws,
 	SiApollographql,
-	SiCsharp,
 	SiDocker,
 	SiEthereum,
 	SiExpo,
 	SiExpress,
 	SiFastapi,
-	SiFigma,
-	SiGnubash,
 	SiGraphql,
-	SiIonic,
 	SiIpfs,
 	SiJavascript,
 	SiKubernetes,
 	SiLinux,
 	SiMongodb,
-	SiMongoose,
 	SiNextdotjs,
-	SiNumpy,
-	SiOpenai,
-	SiPandas,
 	SiPhp,
 	SiPostgresql,
 	SiPrisma,
-	SiPwa,
 	SiPytorch,
 	SiSocketdotio,
 	SiSolidity,
@@ -41,12 +31,10 @@ import {
 	SiTelegram,
 	SiTrpc,
 	SiTypescript,
-	SiWeb3Dotjs,
 } from 'react-icons/si';
 import { TbBrandReactNative, TbCurrencySolana } from 'react-icons/tb';
 
 import { GrMysql } from 'react-icons/gr';
-import { IoLogoVue } from 'react-icons/io5';
 
 const TECHNOLOGIES = [
 	{
@@ -219,6 +207,12 @@ const TECHNOLOGIES = [
 		name: 'Git',
 		url: 'https://git-scm.com/',
 		icon: BsGit,
+	},
+	{
+		name: 'AWS',
+		url: 'https://aws.amazon.com/',
+		icon: SiAmazonaws,
+		main: false,
 	},
 ];
 
