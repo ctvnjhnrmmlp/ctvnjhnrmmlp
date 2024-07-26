@@ -23,7 +23,14 @@ const affiliations = [
 		color: '#4FA544',
 		duration: 'January 2024 - Present',
 	},
-
+	// {
+	// 	name: 'DevCon Laguna',
+	// 	shortname: 'DCL',
+	// 	position: 'Chief Executive Officer',
+	// 	url: 'https://www.facebook.com/profile.php?id=61554309601789',
+	// 	color: '#4FA544',
+	// 	duration: 'January 2024 - Present',
+	// },
 	{
 		name: 'Filipino Web Development Peers',
 		shortname: 'FWDP',

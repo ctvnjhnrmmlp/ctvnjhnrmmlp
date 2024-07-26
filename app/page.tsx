@@ -1,6 +1,7 @@
 'use client';
 
 import accounts from '@/sources/accounts';
+import TECHNOLOGIES from '@/sources/technologies';
 import weblogs from '@/sources/weblogs';
 import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
 import { Card, CardBody, Chip } from '@nextui-org/react';
@@ -15,17 +16,17 @@ import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
 	return (
-		<main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#181818]'>
-			<section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 sm:px-24 py-24'>
+		<main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#050505]'>
+			<section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
 				<div className='px-2 sm:px-0'>
 					<Card
 						classNames={{
-							base: 'bg-background rounded-3xl shadow-none',
+							base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none',
 							body: 'py-6 sm:py-8',
 						}}
 					>
 						<CardBody>
-							<h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase text-center leading-none [text-shadow:_0px_2px_20px_#FFFFFF]'>
+							<h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none'>
 								{getTotalWorkingExperience()}+ Year Experience
 							</h1>
 						</CardBody>
@@ -35,7 +36,7 @@ export default function Home() {
 					<Card
 						classNames={{
 							base: 'rounded-3xl bg-self-abstract bg-no-repeat bg-cover bg-center shadow-none',
-							body: 'py-16 sm:py-24 outline px-0',
+							body: 'py-16 sm:py-32 outline px-0',
 						}}
 					>
 						<CardBody>
@@ -49,14 +50,14 @@ export default function Home() {
 					{accounts.map((account) => (
 						<button
 							key={account.name}
-							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center bg-background'
+							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 '
 						>
 							<Link href={account.url} target='_blank'>
 								<account.icon />
 							</Link>
 						</button>
 					))}
-					<button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow bg-background'>
+					<button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 '>
 						<div className='flex justify-center items-center'>
 							<Link
 								href='https://rxresu.me/ctvnjhnrmmlp/resume'
@@ -76,8 +77,8 @@ export default function Home() {
 						<Card
 							key={experience.company}
 							classNames={{
-								base: 'bg-background rounded-3xl shadow-none overflow-hidden',
-								body: 'py-20 px-12 flex items-center flex-col space-y-4 outline outline-white',
+								base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden',
+								body: 'py-12 sm:py-20 px-12 flex items-center flex-col space-y-4 outline outline-white',
 							}}
 						>
 							<CardBody>
@@ -90,7 +91,8 @@ export default function Home() {
 								<Chip
 									variant='bordered'
 									size='lg'
-									className='text-xs sm:text-sm md:text-lg border-1 p-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center'
+									radius='md'
+									className='text-xs sm:text-sm md:text-lg border-1 p-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'
 									startContent={
 										<p className='p-1'>
 											{experience.current && <RiSparkling2Fill />}
@@ -114,8 +116,8 @@ export default function Home() {
 						<Card
 							key={profession.name}
 							classNames={{
-								base: `rounded-3xl bg-no-repeat bg-cover bg-center flex-grow shadow-none`,
-								body: 'py-16 sm:py-20 flex flex-col space-y-4',
+								base: `rounded-3xl bg-no-repeat bg-cover bg-center flex-grow shadow-none border-white/20 border-1`,
+								body: 'py-20 sm:py-24 flex flex-col space-y-4',
 							}}
 							style={{
 								backgroundImage: `url(/images/${profession.slug}.png)`,
@@ -130,38 +132,37 @@ export default function Home() {
 					))}
 				</div>
 				<div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
-					{professions.map((profession) => (
-						<Card
-							key={profession.name}
-							classNames={{
-								base: `rounded-3xl bg-background shadow-none`,
-								body: 'py-12 flex flex-col space-y-4',
-							}}
-						>
-							<CardBody>
-								<div className='flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 lg:gap-6 px-6 md:px-12'>
-									{profession.technologies.map((technology) => (
-										<Link
-											key={technology.name}
-											href={technology.url}
-											target='_blank'
-										>
+					<Card
+						classNames={{
+							base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
+							body: 'py-12 flex flex-col space-y-4',
+						}}
+					>
+						<CardBody>
+							<div className='flex flex-wrap justify-center md:justify-start gap-4 px-2 md:px-6'>
+								{TECHNOLOGIES.map((technology) => (
+									<Link
+										key={technology.name}
+										href={technology.url}
+										target='_blank'
+									>
+										<div className='p-4 rounded-xl backdrop-blur-sm bg-white/6 border-white/20 border-1'>
 											<p className='text-4xl md:text-5xl lg:text-6xl'>
 												<technology.icon />
 											</p>
-										</Link>
-									))}
-								</div>
-							</CardBody>
-						</Card>
-					))}
+										</div>
+									</Link>
+								))}
+							</div>
+						</CardBody>
+					</Card>
 				</div>
 				<div className='flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center md:justify-start gap-6 md:gap-4 lg:gap-6'>
 					{affiliations.map((affiliation) => (
 						<Card
 							key={affiliation.name}
 							classNames={{
-								base: `rounded-3xl bg-background shadow-none`,
+								base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
 								body: 'py-12 sm:py-16 px-6 md:px-8 lg:px-10 flex flex-col items-center justify-center rounded-3xl text-center overflow-hidden',
 							}}
 						>
@@ -169,9 +170,11 @@ export default function Home() {
 								<h3 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight'>
 									{affiliation.shortname}
 								</h3>
-								<p className='text-xs sm:text-sm line-clamp-2'>
-									{affiliation.name}
-								</p>
+								<div className='p-1 rounded-lg backdrop-blur-sm bg-white/6 border-white/20 border-1'>
+									<p className='text-xs sm:text-sm line-clamp-2'>
+										{affiliation.name}
+									</p>
+								</div>
 							</CardBody>
 						</Card>
 					))}
@@ -180,7 +183,7 @@ export default function Home() {
 					{weblogs.map((weblog) => (
 						<button
 							key={weblog.url}
-							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center bg-background'
+							className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1'
 						>
 							<weblog.icon />
 						</button>
