@@ -16,7 +16,7 @@ const Splash = ({ finishLoading }: { finishLoading: () => void }) => {
 			targets: '#splash-container',
 			delay: 0,
 			scale: 1,
-			duration: 5000,
+			duration: 3000,
 			easing: 'easeInOutExpo',
 		});
 	};
