@@ -16,8 +16,8 @@ const PROFESSIONS = [
 		slug: 'devops',
 	},
 	{
-		name: 'Machine Learning',
-		slug: 'machine-learning',
+		name: 'Data Engineering',
+		slug: 'data-engineering',
 	},
 ];
 

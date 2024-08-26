@@ -5,6 +5,11 @@ const AFFILIATIONS = [
 		url: 'https://www.linkedin.com/in/awscc-uc/',
 	},
 	{
+		name: 'University of Cabuyao',
+		shortname: 'JBECP',
+		url: 'https://www.facebook.com/profile.php?id=61564059277312',
+	},
+	{
 		name: 'Philippines',
 		shortname: 'AWS User Group',
 		url: 'https://www.linkedin.com/company/aws-user-group-philippines/mycompany/',
@@ -16,8 +21,8 @@ const AFFILIATIONS = [
 	},
 	{
 		name: 'Philippines',
-		shortname: 'PWA Pilipinas',
-		url: 'https://www.linkedin.com/company/pwa-pilipinas/',
+		shortname: 'Data Engineering',
+		url: 'https://www.linkedin.com/company/dataengineeringpilipinas/mycompany/',
 	},
 	{
 		name: 'Filipino Web Development Peers',
