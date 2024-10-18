@@ -7,13 +7,14 @@ import {
 	FaReact,
 } from 'react-icons/fa';
 import {
-	SiAmazonaws,
+	SiAmazon,
 	SiApollographql,
 	SiDocker,
 	SiEthereum,
 	SiExpo,
 	SiExpress,
 	SiFastapi,
+	SiFastify,
 	SiGraphql,
 	SiIpfs,
 	SiJavascript,
@@ -25,6 +26,7 @@ import {
 	SiPostgresql,
 	SiPrisma,
 	SiPytorch,
+	SiRust,
 	SiSocketdotio,
 	SiSolidity,
 	SiTailwindcss,
@@ -46,6 +48,11 @@ const TECHNOLOGIES = [
 		name: 'TypeScript',
 		url: 'https://www.typescriptlang.org/',
 		icon: SiTypescript,
+	},
+	{
+		name: 'Rust',
+		url: 'https://www.rust-lang.org/',
+		icon: SiRust,
 	},
 	{
 		name: 'Java',
@@ -96,6 +103,11 @@ const TECHNOLOGIES = [
 		name: 'Express',
 		url: 'https://expressjs.com/',
 		icon: SiExpress,
+	},
+	{
+		name: 'Fastify',
+		url: 'https://fastify.dev/',
+		icon: SiFastify,
 	},
 	{
 		name: 'Fast API',
@@ -211,7 +223,7 @@ const TECHNOLOGIES = [
 	{
 		name: 'AWS',
 		url: 'https://aws.amazon.com/',
-		icon: SiAmazonaws,
+		icon: SiAmazon,
 		main: false,
 	},
 ];

@@ -1,9 +1,5 @@
 const PROFESSIONS = [
 	{
-		name: 'Applications',
-		slug: 'application',
-	},
-	{
 		name: 'Blockchain',
 		slug: 'blockchain',
 	},
@@ -16,8 +12,16 @@ const PROFESSIONS = [
 		slug: 'devops',
 	},
 	{
-		name: 'Data Engineering',
-		slug: 'data-engineering',
+		name: 'Mobile',
+		slug: 'mobile',
+	},
+	{
+		name: 'Smart Contracts',
+		slug: 'smart-contracts',
+	},
+	{
+		name: 'Web',
+		slug: 'web',
 	},
 ];
 
