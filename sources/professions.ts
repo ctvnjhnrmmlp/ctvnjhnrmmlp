@@ -1,15 +1,11 @@
 const PROFESSIONS = [
 	{
-		name: 'Blockchain',
-		slug: 'blockchain',
-	},
-	{
 		name: 'Cloud',
 		slug: 'cloud',
 	},
 	{
-		name: 'DevOps',
-		slug: 'devops',
+		name: 'DApps',
+		slug: 'dapps',
 	},
 	{
 		name: 'Mobile',
