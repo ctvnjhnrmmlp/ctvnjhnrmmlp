@@ -59,8 +59,7 @@ export default function Home() {
           <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 '>
             <div className='flex justify-center items-center'>
               <Link
-                href='https://storage.rxresu.me/clrxnv9o604oclbd78u1clzah/resumes/resume.pdf'
-                target='_blank'
+                href='/resume'
                 className='flex space-x-2 lg:space-x-4 items-center'
               >
                 <span>
