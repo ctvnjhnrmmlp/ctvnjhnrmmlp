@@ -71,7 +71,7 @@ export default function App() {
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
         <div>
           <div>
-            <canvas ref={canvasRef} />
+            <canvas ref={canvasRef} className='pointer-events-none' />
           </div>
         </div>
       </section>
