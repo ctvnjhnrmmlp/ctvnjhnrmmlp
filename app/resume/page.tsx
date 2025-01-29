@@ -17,7 +17,7 @@ export default function App() {
         window.location.origin + '/pdf.worker.min.mjs';
 
       const pdf = await pdfJS.getDocument(
-        '/document/john-rommel-octaviano-software-engineer.pdf'
+        '/documents/john-rommel-octaviano-software-engineer.pdf'
       ).promise;
 
       const page = await pdf.getPage(1);
