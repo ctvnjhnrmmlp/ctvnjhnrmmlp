@@ -21,7 +21,7 @@ const EXPERIENCES = [
   },
   {
     position: 'Software Engineer',
-    company: 'QX Information Technology Corp',
+    company: 'QXIT Corp',
     current: false,
   },
 ];
