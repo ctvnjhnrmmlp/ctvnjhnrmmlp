@@ -1,5 +1,6 @@
 'use client';
 
+import { Badge } from '@/components/ui/badge';
 import {
   Card,
   CardContent,
@@ -8,6 +9,13 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import { getTotalWorkingExperience } from '@/libraries/utils';
 import ACCOUNTS from '@/sources/accounts';
 import EXPRIENCES from '@/sources/experiences';
@@ -75,63 +83,47 @@ export default function Home() {
           </button>
         </div>
         <div className='grid xl:grid-cols-2 gap-6 md:gap-4 lg:gap-6'>
-          {EXPRIENCES.map((experience) => (
-            <Card
-              key={experience.company}
-              className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'
-            >
-              <CardHeader>
-                <CardTitle></CardTitle>
-              </CardHeader>
-              <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
-                <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
-                  {experience.position}
-                </h2>
-                <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
-                  {experience.company}
-                </p>
-              </CardContent>
-              <CardFooter></CardFooter>
-            </Card>
-          ))}
-
-          {/* {EXPRIENCES.map((experience) => (
-            <Card
-              key={experience.company}
-              classNames={{
-                base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden',
-                body: 'py-12 sm:py-20 px-12 flex items-center flex-col space-y-4 outline outline-white',
-              }}
-            >
-              <CardBody>
-                <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight'>
-                  {experience.position}
-                </h2>
-                <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance'>
-                  {experience.company}
-                </p>
-                <Chip
-                  variant='bordered'
-                  size='lg'
-                  radius='md'
-                  className='text-xs sm:text-sm md:text-lg border-1 p-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'
-                  startContent={
-                    <p className='p-1'>
-                      {experience.current && <RiSparkling2Fill />}
-                      {!experience.current && <GoDotFill />}
-                    </p>
-                  }
-                >
-                  {experience.current && (
-                    <span className='block leading-none'>Current</span>
-                  )}
-                  {!experience.current && (
-                    <span className='block leading-none'>Former</span>
-                  )}
-                </Chip>
-              </CardBody>
-            </Card>
-          ))} */}
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {EXPRIENCES.map((experience) => (
+                <CarouselItem key={experience.company}>
+                  <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
+                    <CardHeader>
+                      <CardTitle></CardTitle>
+                    </CardHeader>
+                    <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
+                      <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
+                        {experience.position}
+                      </h2>
+                      <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
+                        {experience.company}
+                      </p>
+                      <Badge className='text-xs sm:text-sm md:text-lg border-white/20 border-1 p-2 sm:px-4 sm:py-3 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'>
+                        <p className='p-1'>
+                          {experience.current && <RiSparkling2Fill />}
+                          {!experience.current && <GoDotFill />}
+                        </p>
+                        {experience.current && (
+                          <span className='block leading-none'>Current</span>
+                        )}
+                        {!experience.current && (
+                          <span className='block leading-none'>Former</span>
+                        )}
+                      </Badge>
+                    </CardContent>
+                    <CardFooter></CardFooter>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
         <div className='flex flex-col xl:flex-row flex-wrap gap-6 md:gap-4 lg:gap-6'>
           {/* {PROFESSIONS.map((profession) => (
