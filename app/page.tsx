@@ -27,7 +27,6 @@ export default function Home() {
           <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl'>
             <CardHeader>
               <CardTitle></CardTitle>
-              <CardDescription></CardDescription>
             </CardHeader>
             <CardContent>
               <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none text-white'>
@@ -41,7 +40,6 @@ export default function Home() {
           <Card className='bg-[url(/images/self-abstract.webp)] bg-no-repeat bg-cover bg-center border-none rounded-3xl'>
             <CardHeader>
               <CardTitle></CardTitle>
-              <CardDescription></CardDescription>
             </CardHeader>
             <CardContent className='py-16 sm:py-32'>
               <h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)] text-white'>
@@ -77,6 +75,26 @@ export default function Home() {
           </button>
         </div>
         <div className='grid xl:grid-cols-2 gap-6 md:gap-4 lg:gap-6'>
+          {EXPRIENCES.map((experience) => (
+            <Card
+              key={experience.company}
+              className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'
+            >
+              <CardHeader>
+                <CardTitle></CardTitle>
+              </CardHeader>
+              <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
+                <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
+                  {experience.position}
+                </h2>
+                <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
+                  {experience.company}
+                </p>
+              </CardContent>
+              <CardFooter></CardFooter>
+            </Card>
+          ))}
+
           {/* {EXPRIENCES.map((experience) => (
             <Card
               key={experience.company}
