@@ -114,7 +114,7 @@ export default function Home() {
               key={profession.name}
               classNames={{
                 base: `rounded-3xl flex-grow shadow-none backdrop-blur-sm bg-white/5 border-white/20 border-1`,
-                body: 'py-20 sm:py-24 flex flex-col space-y-4',
+                body: 'py-20 sm:py-24 flex flex-col space-y-4 xl:px-20',
               }}
             >
               <CardBody>
