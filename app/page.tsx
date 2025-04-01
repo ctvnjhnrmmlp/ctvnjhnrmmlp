@@ -29,14 +29,14 @@ export default function Home() {
   return (
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
-        <div className='px-2 sm:px-0'>
-          <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl'>
+        <div>
+          <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl w-full py-0.5 sm:py-2 md:py-4'>
             <CardHeader>
               <CardTitle></CardTitle>
             </CardHeader>
             <CardContent>
-              <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none text-white'>
-                {getTotalWorkingExperience()}+ Years Total Experience
+              <h1 className='text-xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none text-white'>
+                {getTotalWorkingExperience()}+ Years Experience
               </h1>
             </CardContent>
             <CardFooter></CardFooter>
@@ -48,7 +48,7 @@ export default function Home() {
               <CardTitle></CardTitle>
             </CardHeader>
             <CardContent className='py-16 sm:py-32'>
-              <h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)] text-white'>
+              <h1 className='text-4xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)] text-white'>
                 John Rommel Octaviano
               </h1>
             </CardContent>
@@ -59,7 +59,7 @@ export default function Home() {
           {ACCOUNTS.map((account) => (
             <button
               key={account.name}
-              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'
+              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-lg sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'
             >
               <Link href={account.url} target='_blank'>
                 <account.icon />
@@ -92,10 +92,59 @@ export default function Home() {
                 delay: 3000,
               }),
             ]}
+            orientation='horizontal'
+            className='hidden xl:block'
           >
             <CarouselContent>
               {EXPRIENCES.map((experience) => (
                 <CarouselItem key={experience.company} className='basis-1/2'>
+                  <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
+                    <CardHeader>
+                      <CardTitle></CardTitle>
+                    </CardHeader>
+                    <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
+                      <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
+                        {experience.position}
+                      </h2>
+                      <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
+                        {experience.company}
+                      </p>
+                      <Badge className='text-xs sm:text-sm md:text-lg border-white/20 border-1 p-2 sm:px-4 sm:py-3 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'>
+                        <p className='p-1'>
+                          {experience.current && <RiSparkling2Fill />}
+                          {!experience.current && <GoDotFill />}
+                        </p>
+                        {experience.current && (
+                          <span className='block leading-none'>Current</span>
+                        )}
+                        {!experience.current && (
+                          <span className='block leading-none'>Former</span>
+                        )}
+                      </Badge>
+                    </CardContent>
+                    <CardFooter></CardFooter>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                playOnInit: true,
+                delay: 3000,
+              }),
+            ]}
+            orientation='vertical'
+            className='block xl:hidden'
+          >
+            <CarouselContent className='-mt-1 h-[30rem]'>
+              {EXPRIENCES.map((experience) => (
+                <CarouselItem key={experience.company} className='basis-1/3'>
                   <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
                     <CardHeader>
                       <CardTitle></CardTitle>
