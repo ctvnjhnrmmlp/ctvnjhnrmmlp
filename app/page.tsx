@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -13,8 +12,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 import { getTotalWorkingExperience } from '@/libraries/utils';
 import ACCOUNTS from '@/sources/accounts';
@@ -22,6 +19,7 @@ import EXPRIENCES from '@/sources/experiences';
 import PROFESSIONS from '@/sources/professions';
 import TECHNOLOGIES from '@/sources/technologies';
 import WEBLOGS from '@/sources/weblogs';
+import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 import { GoDotFill } from 'react-icons/go';
@@ -82,16 +80,22 @@ export default function Home() {
             </div>
           </button>
         </div>
-        <div className='grid xl:grid-cols-2 gap-6 md:gap-4 lg:gap-6'>
+        <div className='grid xl:grid-cols-1 gap-6 md:gap-4 lg:gap-6'>
           <Carousel
             opts={{
               align: 'start',
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                playOnInit: true,
+                delay: 2500,
+              }),
+            ]}
           >
             <CarouselContent>
               {EXPRIENCES.map((experience) => (
-                <CarouselItem key={experience.company}>
+                <CarouselItem key={experience.company} className='basis-1/2'>
                   <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
                     <CardHeader>
                       <CardTitle></CardTitle>
@@ -121,26 +125,25 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
         </div>
         <div className='flex flex-col xl:flex-row flex-wrap gap-6 md:gap-4 lg:gap-6'>
-          {/* {PROFESSIONS.map((profession) => (
+          {PROFESSIONS.map((profession) => (
             <Card
               key={profession.name}
-              classNames={{
-                base: `rounded-3xl flex-grow shadow-none backdrop-blur-sm bg-white/5 border-white/20 border-1`,
-                body: 'py-20 sm:py-24 flex flex-col space-y-4 xl:px-20',
-              }}
+              className='rounded-3xl flex-grow shadow-none backdrop-blur-sm bg-white/5 border-white/20 border-1'
             >
-              <CardBody>
-                <h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight'>
+              <CardHeader>
+                <CardTitle></CardTitle>
+              </CardHeader>
+              <CardContent className='py-20 flex flex-col space-y-4 xl:px-16'>
+                <h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
                   {profession.name}
                 </h3>
-              </CardBody>
+              </CardContent>
+              <CardFooter></CardFooter>
             </Card>
-          ))} */}
+          ))}
         </div>
         <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
           {/* <Card
