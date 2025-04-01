@@ -30,12 +30,13 @@ import {
   SiRust,
   SiSocketdotio,
   SiSolidity,
+  SiSupabase,
   SiTailwindcss,
   SiTelegram,
   SiTrpc,
   SiTypescript,
 } from 'react-icons/si';
-import { TbBrandReactNative, TbCurrencySolana } from 'react-icons/tb';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 import { GrMysql } from 'react-icons/gr';
 
@@ -124,6 +125,11 @@ const TECHNOLOGIES = [
     name: 'Laravel',
     url: 'https://laravel.com/',
     icon: FaLaravel,
+  },
+  {
+    name: 'Supabase',
+    url: 'https://supabase.com/',
+    icon: SiSupabase,
   },
   {
     name: 'React Native',
