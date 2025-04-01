@@ -24,7 +24,7 @@ export default function Home() {
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
         <div className='px-2 sm:px-0'>
-          <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none'>
+          <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl'>
             <CardHeader>
               <CardTitle></CardTitle>
               <CardDescription></CardDescription>
@@ -38,6 +38,18 @@ export default function Home() {
           </Card>
         </div>
         <div>
+          <Card className='bg-[url(/images/self-abstract.webp)] bg-no-repeat bg-cover bg-center border-none rounded-3xl'>
+            <CardHeader>
+              <CardTitle></CardTitle>
+              <CardDescription></CardDescription>
+            </CardHeader>
+            <CardContent className='py-16 sm:py-32'>
+              <h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)] text-white'>
+                John Rommel Octaviano
+              </h1>
+            </CardContent>
+            <CardFooter></CardFooter>
+          </Card>
           {/* <Card
             classNames={{
               base: 'rounded-3xl bg-self-abstract bg-no-repeat bg-cover bg-center shadow-none',
