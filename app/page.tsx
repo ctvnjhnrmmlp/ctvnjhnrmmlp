@@ -25,7 +25,7 @@ export default function Home() {
           >
             <CardBody>
               <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none'>
-                {getTotalWorkingExperience()}+ Year Experience
+                {getTotalWorkingExperience()}+ Years Total Experience
               </h1>
             </CardBody>
           </Card>
