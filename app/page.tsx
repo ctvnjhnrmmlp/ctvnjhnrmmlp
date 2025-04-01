@@ -1,15 +1,14 @@
 'use client';
 
 import ACCOUNTS from '@/sources/accounts';
+import EXPRIENCES from '@/sources/experiences';
+import PROFESSIONS from '@/sources/professions';
 import TECHNOLOGIES from '@/sources/technologies';
 import WEBLOGS from '@/sources/weblogs';
 import getTotalWorkingExperience from '@/utilities/getTotalWorkingExperience';
 import { Card, CardBody, Chip } from '@nextui-org/react';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
-
-import EXPRIENCES from '@/sources/experiences';
-import PROFESSIONS from '@/sources/professions';
 import { GoDotFill } from 'react-icons/go';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
