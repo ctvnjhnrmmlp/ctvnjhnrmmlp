@@ -89,7 +89,7 @@ export default function Home() {
             plugins={[
               Autoplay({
                 playOnInit: true,
-                delay: 2500,
+                delay: 3000,
               }),
             ]}
           >
