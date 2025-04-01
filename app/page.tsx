@@ -50,31 +50,19 @@ export default function Home() {
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
-          {/* <Card
-            classNames={{
-              base: 'rounded-3xl bg-self-abstract bg-no-repeat bg-cover bg-center shadow-none',
-              body: 'py-16 sm:py-32 outline px-0',
-            }}
-          >
-            <CardBody>
-              <h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
-                John Rommel Octaviano
-              </h1>
-            </CardBody>
-          </Card> */}
         </div>
         <div className='flex flex-wrap gap-4 lg:gap-6 justify-center lg:justify-between'>
           {ACCOUNTS.map((account) => (
             <button
               key={account.name}
-              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 '
+              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'
             >
               <Link href={account.url} target='_blank'>
                 <account.icon />
               </Link>
             </button>
           ))}
-          <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 '>
+          <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'>
             <div className='flex justify-center items-center'>
               <Link
                 href='/resume'
