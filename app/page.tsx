@@ -1,103 +1,166 @@
-import Image from "next/image";
+'use client';
+
+import { getTotalWorkingExperience } from '@/libraries/utils';
+import ACCOUNTS from '@/sources/accounts';
+import EXPRIENCES from '@/sources/experiences';
+import PROFESSIONS from '@/sources/professions';
+import TECHNOLOGIES from '@/sources/technologies';
+import WEBLOGS from '@/sources/weblogs';
+import Link from 'next/link';
+import { FiPaperclip } from 'react-icons/fi';
+import { GoDotFill } from 'react-icons/go';
+import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#050505]'>
+      <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
+        <div className='px-2 sm:px-0'>
+          {/* <Card
+            classNames={{
+              base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none',
+              body: 'py-6 sm:py-8',
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <CardBody>
+              <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none'>
+                {getTotalWorkingExperience()}+ Years Total Experience
+              </h1>
+            </CardBody>
+          </Card> */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div>
+          {/* <Card
+            classNames={{
+              base: 'rounded-3xl bg-self-abstract bg-no-repeat bg-cover bg-center shadow-none',
+              body: 'py-16 sm:py-32 outline px-0',
+            }}
+          >
+            <CardBody>
+              <h1 className='text-5xl sm:text-6xl md:text-8xl lg:text-9xl uppercase text-center leading-none tracking-tighter [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]'>
+                John Rommel Octaviano
+              </h1>
+            </CardBody>
+          </Card> */}
+        </div>
+        <div className='flex flex-wrap gap-4 lg:gap-6 justify-center lg:justify-between'>
+          {ACCOUNTS.map((account) => (
+            <button
+              key={account.name}
+              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 '
+            >
+              <Link href={account.url} target='_blank'>
+                <account.icon />
+              </Link>
+            </button>
+          ))}
+          <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 '>
+            <div className='flex justify-center items-center'>
+              <Link
+                href='/resume'
+                className='flex space-x-2 lg:space-x-4 items-center'
+              >
+                <span>
+                  <FiPaperclip />
+                </span>
+                <h4 className='block md:hidden lg:block'>Resume</h4>
+              </Link>
+            </div>
+          </button>
+        </div>
+        <div className='grid xl:grid-cols-2 gap-6 md:gap-4 lg:gap-6'>
+          {/* {EXPRIENCES.map((experience) => (
+            <Card
+              key={experience.company}
+              classNames={{
+                base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden',
+                body: 'py-12 sm:py-20 px-12 flex items-center flex-col space-y-4 outline outline-white',
+              }}
+            >
+              <CardBody>
+                <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight'>
+                  {experience.position}
+                </h2>
+                <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance'>
+                  {experience.company}
+                </p>
+                <Chip
+                  variant='bordered'
+                  size='lg'
+                  radius='md'
+                  className='text-xs sm:text-sm md:text-lg border-1 p-2 sm:px-4 sm:py-5 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'
+                  startContent={
+                    <p className='p-1'>
+                      {experience.current && <RiSparkling2Fill />}
+                      {!experience.current && <GoDotFill />}
+                    </p>
+                  }
+                >
+                  {experience.current && (
+                    <span className='block leading-none'>Current</span>
+                  )}
+                  {!experience.current && (
+                    <span className='block leading-none'>Former</span>
+                  )}
+                </Chip>
+              </CardBody>
+            </Card>
+          ))} */}
+        </div>
+        <div className='flex flex-col xl:flex-row flex-wrap gap-6 md:gap-4 lg:gap-6'>
+          {/* {PROFESSIONS.map((profession) => (
+            <Card
+              key={profession.name}
+              classNames={{
+                base: `rounded-3xl flex-grow shadow-none backdrop-blur-sm bg-white/5 border-white/20 border-1`,
+                body: 'py-20 sm:py-24 flex flex-col space-y-4 xl:px-20',
+              }}
+            >
+              <CardBody>
+                <h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight'>
+                  {profession.name}
+                </h3>
+              </CardBody>
+            </Card>
+          ))} */}
+        </div>
+        <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
+          {/* <Card
+            classNames={{
+              base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
+              body: 'py-12 flex flex-col space-y-4',
+            }}
+          >
+            <CardBody>
+              <div className='flex flex-wrap justify-center gap-4 px-2 md:px-6'>
+                {TECHNOLOGIES.map((technology) => (
+                  <Link
+                    key={technology.name}
+                    href={technology.url}
+                    target='_blank'
+                  >
+                    <div className='p-4 rounded-xl backdrop-blur-sm bg-white/6 border-white/20 border-1'>
+                      <p className='text-4xl md:text-5xl lg:text-6xl'>
+                        <technology.icon />
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </CardBody>
+          </Card> */}
+        </div>
+        <div className='flex flex-wrap justify-center space-x-2 md:space-x-6'>
+          {WEBLOGS.map((weblog) => (
+            <button
+              key={weblog.url}
+              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1'
+            >
+              <weblog.icon />
+            </button>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
