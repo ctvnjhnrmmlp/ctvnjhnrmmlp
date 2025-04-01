@@ -158,11 +158,11 @@ export default function Home() {
             </CardBody>
           </Card> */}
         </div>
-        <div className='flex flex-wrap justify-center space-x-2 md:space-x-6'>
+        <div className='flex flex-wrap space-x-2 md:space-x-6'>
           {WEBLOGS.map((weblog) => (
             <button
               key={weblog.url}
-              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1'
+              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'
             >
               <weblog.icon />
             </button>
