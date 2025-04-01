@@ -1,5 +1,3 @@
-import '../styles/globals.css';
-
 import Content from '@/components/compounds/Content/Content';
 import FONTS from '@/configurations/fonts';
 import { METADATA } from '@/configurations/metadata';
