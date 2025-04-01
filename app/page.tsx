@@ -146,13 +146,11 @@ export default function Home() {
           ))}
         </div>
         <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
-          {/* <Card
-            classNames={{
-              base: `rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none`,
-              body: 'py-12 flex flex-col space-y-4',
-            }}
-          >
-            <CardBody>
+          <Card className='rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none'>
+            <CardHeader>
+              <CardTitle></CardTitle>
+            </CardHeader>
+            <CardContent className='py-12 flex flex-col space-y-4'>
               <div className='flex flex-wrap justify-center gap-4 px-2 md:px-6'>
                 {TECHNOLOGIES.map((technology) => (
                   <Link
@@ -161,15 +159,16 @@ export default function Home() {
                     target='_blank'
                   >
                     <div className='p-4 rounded-xl backdrop-blur-sm bg-white/6 border-white/20 border-1'>
-                      <p className='text-4xl md:text-5xl lg:text-6xl'>
+                      <p className='text-4xl md:text-5xl lg:text-6xl text-white'>
                         <technology.icon />
                       </p>
                     </div>
                   </Link>
                 ))}
               </div>
-            </CardBody>
-          </Card> */}
+            </CardContent>
+            <CardFooter></CardFooter>
+          </Card>
         </div>
         <div className='flex flex-wrap space-x-2 md:space-x-6'>
           {WEBLOGS.map((weblog) => (
