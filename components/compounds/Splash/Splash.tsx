@@ -28,7 +28,7 @@ const Splash = ({ finishLoading }: { finishLoading: () => void }) => {
   });
 
   return (
-    <div className='flex flex-col min-h-screen justify-center items-center duration-300 bg-background'>
+    <div className='flex flex-col min-h-screen justify-center items-center duration-300 bg-black'>
       <div className='flex flex-col gap-4 p-8' id='splash-container'>
         <div className='flex flex-col justify-center items-center'>
           <Image

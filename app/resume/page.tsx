@@ -67,7 +67,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#050505]'>
+    <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
         <div>
           <div>
