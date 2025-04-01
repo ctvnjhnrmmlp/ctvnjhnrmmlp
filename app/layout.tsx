@@ -2,6 +2,7 @@ import Content from '@/components/compounds/Content/Content';
 import FONTS from '@/configurations/fonts';
 import { METADATA } from '@/configurations/metadata';
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = METADATA;
 

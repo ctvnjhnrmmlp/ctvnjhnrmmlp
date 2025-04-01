@@ -1,5 +1,13 @@
 'use client';
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { getTotalWorkingExperience } from '@/libraries/utils';
 import ACCOUNTS from '@/sources/accounts';
 import EXPRIENCES from '@/sources/experiences';
@@ -13,21 +21,21 @@ import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
   return (
-    <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-[#050505]'>
+    <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
         <div className='px-2 sm:px-0'>
-          {/* <Card
-            classNames={{
-              base: 'backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none',
-              body: 'py-6 sm:py-8',
-            }}
-          >
-            <CardBody>
-              <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none'>
+          <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none'>
+            <CardHeader>
+              <CardTitle></CardTitle>
+              <CardDescription></CardDescription>
+            </CardHeader>
+            <CardContent>
+              <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase text-center leading-none text-white'>
                 {getTotalWorkingExperience()}+ Years Total Experience
               </h1>
-            </CardBody>
-          </Card> */}
+            </CardContent>
+            <CardFooter></CardFooter>
+          </Card>
         </div>
         <div>
           {/* <Card
