@@ -57,14 +57,11 @@ export default function Home() {
         </div>
         <div className='flex flex-wrap gap-4 lg:gap-6 justify-center lg:justify-between'>
           {ACCOUNTS.map((account) => (
-            <button
-              key={account.name}
-              className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-lg sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'
-            >
-              <Link href={account.url} target='_blank'>
+            <Link key={account.name} href={account.url} target='_blank'>
+              <button className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-lg sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white cursor-pointer'>
                 <account.icon />
-              </Link>
-            </button>
+              </button>
+            </Link>
           ))}
           <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'>
             <div className='flex justify-center items-center'>
