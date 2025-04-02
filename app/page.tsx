@@ -196,8 +196,8 @@ export default function Home() {
             <CardHeader>
               <CardTitle></CardTitle>
             </CardHeader>
-            <CardContent className='py-12 flex flex-col space-y-4'>
-              <div className='flex flex-wrap justify-center gap-2 md:gap-4 px-2 md:px-6'>
+            <CardContent className='py-4 flex flex-col space-y-4'>
+              <div className='flex flex-wrap justify-center gap-1 sm:gap-2 md:gap-4 px-2 md:px-6'>
                 {TECHNOLOGIES.map((technology) => (
                   <Link
                     key={technology.name}
