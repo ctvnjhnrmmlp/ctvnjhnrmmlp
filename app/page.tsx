@@ -185,7 +185,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle></CardTitle>
               </CardHeader>
-              <CardContent className='py-20 flex flex-col space-y-4 xl:px-16'>
+              <CardContent className='py-8 md:py-16 lg:py-18 xl:py-20 flex flex-col space-y-4 xl:px-16'>
                 <h3 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
                   {profession.name}
                 </h3>
