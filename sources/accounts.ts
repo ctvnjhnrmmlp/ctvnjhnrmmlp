@@ -1,11 +1,4 @@
-import {
-  FaFacebookF,
-  FaGithub,
-  FaGoogle,
-  FaLinkedinIn,
-  FaStar,
-} from 'react-icons/fa';
-
+import { FaFacebookF, FaGithub, FaGoogle, FaLinkedinIn } from 'react-icons/fa';
 import { SiLinktree } from 'react-icons/si';
 
 const ACCOUNTS = [
@@ -33,11 +26,6 @@ const ACCOUNTS = [
     name: 'Link Tree',
     url: 'https://linktr.ee/ctvnjhnrmmlp',
     icon: SiLinktree,
-  },
-  {
-    name: 'The Logs',
-    url: 'https://the-logs.vercel.app',
-    icon: FaStar,
   },
 ];
 
