@@ -1,7 +1,7 @@
 'use client';
 
-import GithubRepoCarousel from '@/components/compounds/Grid/GitHubRepoGrid';
-import { Badge } from '@/components/ui/badge';
+import ExperienceCarousel from '@/components/compounds/Carousel/ExperienceCarousel';
+import GithubRepoCarousel from '@/components/compounds/Carousel/GithubRepoCarousel';
 import {
   Card,
   CardContent,
@@ -9,87 +9,18 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
 import { getTotalWorkingExperience } from '@/libraries/utils';
 import { Repositories } from '@/services/github/repositories';
 import ACCOUNTS from '@/sources/accounts';
-import EXPRIENCES from '@/sources/experiences';
 import PROFESSIONS from '@/sources/professions';
 import TECHNOLOGIES from '@/sources/technologies';
 import WEBLOGS from '@/sources/weblogs';
 import { useQuery } from '@tanstack/react-query';
-import Autoplay from 'embla-carousel-autoplay';
-import useEmblaCarousel from 'embla-carousel-react';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
 import { FiPaperclip } from 'react-icons/fi';
-import { GoDotFill } from 'react-icons/go';
 import { IoIosDocument } from 'react-icons/io';
-import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  const autoplay = true;
-  const autoplayInterval = 5000;
-
-  const onSelect = () => {
-    if (!emblaApi) return;
-  };
-
-  useEffect(() => {
-    if (!emblaApi) return;
-
-    emblaApi.on('select', onSelect);
-    onSelect();
-
-    return () => {
-      emblaApi.off('select', onSelect);
-    };
-  });
-
-  useEffect(() => {
-    if (autoplay && emblaApi) {
-      const autoplayCallback = () => {
-        if (emblaApi.canScrollNext()) {
-          emblaApi.scrollNext();
-        } else {
-          emblaApi.scrollTo(0);
-        }
-      };
-
-      const startAutoplay = () => {
-        stopAutoplay();
-        autoplayIntervalRef.current = setInterval(
-          autoplayCallback,
-          autoplayInterval
-        );
-      };
-
-      const stopAutoplay = () => {
-        if (autoplayIntervalRef.current) {
-          clearInterval(autoplayIntervalRef.current);
-          autoplayIntervalRef.current = null;
-        }
-      };
-
-      startAutoplay();
-
-      emblaApi.on('pointerDown', stopAutoplay);
-      emblaApi.on('pointerUp', startAutoplay);
-
-      return () => {
-        stopAutoplay();
-        emblaApi.off('pointerDown', stopAutoplay);
-        emblaApi.off('pointerUp', startAutoplay);
-      };
-    }
-  });
-
   const { data: repositoriesServer } = useQuery({
     queryKey: ['getUserRepository'],
     queryFn: async () => await Repositories.readRepositories(),
@@ -152,56 +83,7 @@ export default function Home() {
           </button>
         </div>
         <div>
-          <Carousel
-            ref={emblaRef}
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                playOnInit: true,
-                delay: 3000,
-              }),
-            ]}
-            orientation='horizontal'
-          >
-            <CarouselContent className='gap-2'>
-              {EXPRIENCES.map((experience) => (
-                <CarouselItem
-                  key={experience.company}
-                  className='basis-full md:basis-1/2'
-                >
-                  <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
-                    <CardHeader>
-                      <CardTitle></CardTitle>
-                    </CardHeader>
-                    <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
-                      <h2 className='text-xl sm:text-3xl md:text-5xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
-                        {experience.position}
-                      </h2>
-                      <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-center leading-none font-extralight text-balance text-white'>
-                        {experience.company}
-                      </p>
-                      <Badge className='text-xs sm:text-sm md:text-lg border-white/20 border-1 p-2 sm:px-4 sm:py-3 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'>
-                        <p className='p-1'>
-                          {experience.current && <RiSparkling2Fill />}
-                          {!experience.current && <GoDotFill />}
-                        </p>
-                        {experience.current && (
-                          <span className='block leading-none'>Current</span>
-                        )}
-                        {!experience.current && (
-                          <span className='block leading-none'>Former</span>
-                        )}
-                      </Badge>
-                    </CardContent>
-                    <CardFooter></CardFooter>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+          <ExperienceCarousel />
         </div>
         <div className='flex flex-col xl:flex-row flex-wrap gap-6 md:gap-4 lg:gap-6'>
           {PROFESSIONS.map((profession) => (

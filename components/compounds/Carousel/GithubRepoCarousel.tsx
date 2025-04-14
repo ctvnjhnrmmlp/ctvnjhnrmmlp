@@ -1,6 +1,6 @@
 'use client';
 
-import { GithubRepoCard } from '@/components/Blocks/Cards/GithubRepoCard';
+import GithubRepoCard from '@/components/blocks/Cards/GithubRepoCard';
 import {
   Carousel,
   CarouselContent,

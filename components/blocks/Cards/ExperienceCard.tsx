@@ -1,0 +1,61 @@
+'use client';
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Briefcase } from 'lucide-react';
+
+interface Experience {
+  company: string;
+  position: string;
+  duration: string;
+  achievements: string[];
+}
+
+interface ExperienceCardProps {
+  experience: Experience;
+}
+
+const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+  return (
+    <Card className='w-full rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none overflow-hidden transition-all h-full'>
+      <CardHeader className='pb-2'>
+        <div className='flex items-start justify-between flex-col sm:flex-row gap-2'>
+          <div className='flex items-center gap-2'>
+            <div className='p-2 rounded-sm backdrop-blur-sm bg-white/6 border-white/20 border-1'>
+              <Briefcase className='h-5 w-5 text-white' />
+            </div>
+            <div>
+              <CardTitle className='text-xl text-white'>
+                {experience.position}
+              </CardTitle>
+              <CardDescription className='text-base font-medium text-white'>
+                {experience.company}
+              </CardDescription>
+            </div>
+          </div>
+          <div className='text-sm text-white font-medium'>
+            {experience.duration}
+          </div>
+        </div>
+      </CardHeader>
+      <CardContent>
+        <div>
+          <ul className='list-disc pl-5 text-sm space-y-1 text-white'>
+            {experience.achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
+        </div>
+      </CardContent>
+      <CardFooter className='pt-0 flex justify-center'></CardFooter>
+    </Card>
+  );
+};
+
+export default ExperienceCard;

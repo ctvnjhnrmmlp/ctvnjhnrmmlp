@@ -12,7 +12,7 @@ import {
 import { AlertCircle, Eye, GitFork, Star } from 'lucide-react';
 import Link from 'next/link';
 
-export const GithubRepoCard = (props: GitHubRepository) => {
+const GithubRepoCard = (props: GitHubRepository) => {
   const formattedDate = new Date(props.updated_at).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
@@ -104,3 +104,5 @@ export const GithubRepoCard = (props: GitHubRepository) => {
     </Link>
   );
 };
+
+export default GithubRepoCard;
