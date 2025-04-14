@@ -22,7 +22,7 @@ interface ExperienceCardProps {
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <Card className='w-full rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none overflow-hidden transition-all h-full'>
-      <CardHeader className='pb-2'>
+      <CardHeader>
         <div className='flex items-start justify-between flex-col sm:flex-row gap-2'>
           <div className='flex items-center gap-2'>
             <div>
@@ -40,12 +40,12 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         </div>
       </CardHeader>
       <CardContent>
-        <div>
-          <ul className='list-disc pl-5 text-sm space-y-1 text-white'>
-            {experience.achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
-            ))}
-          </ul>
+        <div className='space-y-2'>
+          {experience.achievements.map((achievement, index) => (
+            <p key={index} className='text-whitelist-none text-white text-sm'>
+              {achievement}
+            </p>
+          ))}
         </div>
       </CardContent>
     </Card>
