@@ -7,14 +7,23 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import EXPERIENCES from '@/sources/experiences';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function ExperienceCarousel() {
   return (
     <Carousel
       className='w-full'
       opts={{
-        align: 'center',
+        align: 'start',
+        loop: true,
       }}
+      plugins={[
+        Autoplay({
+          playOnInit: true,
+          delay: 3000,
+        }),
+      ]}
+      orientation='horizontal'
     >
       <CarouselContent>
         {EXPERIENCES.map((experience) => (

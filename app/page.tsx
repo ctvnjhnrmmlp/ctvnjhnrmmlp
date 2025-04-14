@@ -105,11 +105,7 @@ export default function Home() {
         </div>
         <div>
           {repositoriesServer && (
-            <GithubRepoCarousel
-              repositories={repositoriesServer}
-              autoplay
-              autoplayInterval={3}
-            />
+            <GithubRepoCarousel repositories={repositoriesServer} />
           )}
         </div>
         <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
