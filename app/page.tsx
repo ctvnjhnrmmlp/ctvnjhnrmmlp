@@ -1,5 +1,6 @@
 'use client';
 
+import GithubRepoGrid from '@/components/compounds/Grid/GitHubRepoGrid';
 import { Badge } from '@/components/ui/badge';
 import {
   Card,
@@ -34,10 +35,6 @@ export default function Home() {
       queryKey: ['getUserRepository'],
       queryFn: async () => await Repositories.readRepositories(),
     });
-
-  if (repositoriesServer) {
-    console.log(repositoriesServer);
-  }
 
   return (
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
@@ -234,6 +231,12 @@ export default function Home() {
             <CardFooter></CardFooter>
           </Card>
         </div>
+        {repositoriesServer && (
+          <div>
+            <GithubRepoGrid repositories={repositoriesServer} columns={3} />
+          </div>
+        )}
+
         <div className='flex flex-wrap space-x-2 md:space-x-6'>
           {WEBLOGS.map((weblog) => (
             <button
