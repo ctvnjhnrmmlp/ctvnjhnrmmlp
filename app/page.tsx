@@ -1,6 +1,6 @@
 'use client';
 
-import GithubRepoGrid from '@/components/compounds/Grid/GitHubRepoGrid';
+import GithubRepoCarousel from '@/components/compounds/Grid/GitHubRepoGrid';
 import { Badge } from '@/components/ui/badge';
 import {
   Card,
@@ -23,13 +23,73 @@ import TECHNOLOGIES from '@/sources/technologies';
 import WEBLOGS from '@/sources/weblogs';
 import { useQuery } from '@tanstack/react-query';
 import Autoplay from 'embla-carousel-autoplay';
+import useEmblaCarousel from 'embla-carousel-react';
 import Link from 'next/link';
+import { useEffect, useRef } from 'react';
 import { FiPaperclip } from 'react-icons/fi';
 import { GoDotFill } from 'react-icons/go';
 import { IoIosDocument } from 'react-icons/io';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const autoplay = true;
+  const autoplayInterval = 5000;
+
+  const onSelect = () => {
+    if (!emblaApi) return;
+  };
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    emblaApi.on('select', onSelect);
+    onSelect();
+
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (autoplay && emblaApi) {
+      const autoplayCallback = () => {
+        if (emblaApi.canScrollNext()) {
+          emblaApi.scrollNext();
+        } else {
+          emblaApi.scrollTo(0);
+        }
+      };
+
+      const startAutoplay = () => {
+        stopAutoplay();
+        autoplayIntervalRef.current = setInterval(
+          autoplayCallback,
+          autoplayInterval
+        );
+      };
+
+      const stopAutoplay = () => {
+        if (autoplayIntervalRef.current) {
+          clearInterval(autoplayIntervalRef.current);
+          autoplayIntervalRef.current = null;
+        }
+      };
+
+      startAutoplay();
+
+      emblaApi.on('pointerDown', stopAutoplay);
+      emblaApi.on('pointerUp', startAutoplay);
+
+      return () => {
+        stopAutoplay();
+        emblaApi.off('pointerDown', stopAutoplay);
+        emblaApi.off('pointerUp', startAutoplay);
+      };
+    }
+  }, [autoplay, autoplayInterval, emblaApi]);
+
   const { data: repositoriesServer, isLoading: repositoriesServerLoading } =
     useQuery({
       queryKey: ['getUserRepository'],
@@ -94,6 +154,7 @@ export default function Home() {
         </div>
         <div className='grid xl:grid-cols-1 gap-6 md:gap-4 lg:gap-6'>
           <Carousel
+            ref={emblaRef}
             opts={{
               align: 'start',
               loop: true,
@@ -141,6 +202,7 @@ export default function Home() {
             </CarouselContent>
           </Carousel>
           <Carousel
+            ref={emblaRef}
             opts={{
               align: 'start',
               loop: true,
@@ -233,10 +295,13 @@ export default function Home() {
         </div>
         {repositoriesServer && (
           <div>
-            <GithubRepoGrid repositories={repositoriesServer} columns={3} />
+            <GithubRepoCarousel
+              repositories={repositoriesServer}
+              autoplay
+              autoplayInterval={3}
+            />
           </div>
         )}
-
         <div className='flex flex-wrap space-x-2 md:space-x-6'>
           {WEBLOGS.map((weblog) => (
             <button
