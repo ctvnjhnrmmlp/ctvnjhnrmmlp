@@ -29,7 +29,7 @@ export default function ExperienceCarousel() {
         {EXPERIENCES.map((experience) => (
           <CarouselItem
             key={experience.company}
-            className='basis-full lg:basis-1/2'
+            className='basis-full lg:basis-1/3'
           >
             <div className='p-1 h-full'>
               <ExperienceCard experience={experience} />
