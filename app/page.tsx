@@ -97,7 +97,7 @@ export default function Home() {
 
   return (
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
-      <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
+      <section className='container max-w-screen mx-auto flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>
         <div>
           <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl w-full py-0.5 sm:py-2 md:py-4'>
             <CardHeader>
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </button>
         </div>
-        <div className='grid xl:grid-cols-1 gap-6 md:gap-4 lg:gap-6'>
+        <div>
           <Carousel
             ref={emblaRef}
             opts={{
@@ -165,68 +165,22 @@ export default function Home() {
               }),
             ]}
             orientation='horizontal'
-            className='hidden xl:block'
           >
             <CarouselContent className='gap-2'>
               {EXPRIENCES.map((experience) => (
-                <CarouselItem key={experience.company} className='basis-1/2'>
+                <CarouselItem
+                  key={experience.company}
+                  className='basis-full md:basis-1/2'
+                >
                   <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
                     <CardHeader>
                       <CardTitle></CardTitle>
                     </CardHeader>
                     <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
-                      <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
+                      <h2 className='text-xl sm:text-3xl md:text-5xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
                         {experience.position}
                       </h2>
-                      <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
-                        {experience.company}
-                      </p>
-                      <Badge className='text-xs sm:text-sm md:text-lg border-white/20 border-1 p-2 sm:px-4 sm:py-3 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'>
-                        <p className='p-1'>
-                          {experience.current && <RiSparkling2Fill />}
-                          {!experience.current && <GoDotFill />}
-                        </p>
-                        {experience.current && (
-                          <span className='block leading-none'>Current</span>
-                        )}
-                        {!experience.current && (
-                          <span className='block leading-none'>Former</span>
-                        )}
-                      </Badge>
-                    </CardContent>
-                    <CardFooter></CardFooter>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <Carousel
-            ref={emblaRef}
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                playOnInit: true,
-                delay: 3000,
-              }),
-            ]}
-            orientation='vertical'
-            className='block xl:hidden'
-          >
-            <CarouselContent className='-mt-1 h-[30rem] gap-2'>
-              {EXPRIENCES.map((experience) => (
-                <CarouselItem key={experience.company} className='basis-1/3'>
-                  <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
-                    <CardHeader>
-                      <CardTitle></CardTitle>
-                    </CardHeader>
-                    <CardContent className='py-12 sm:py-20 px-12 flex items-center flex-col space-y-4'>
-                      <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center leading-none tracking-tight text-white'>
-                        {experience.position}
-                      </h2>
-                      <p className='text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center leading-none font-extralight text-balance text-white'>
+                      <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl text-center leading-none font-extralight text-balance text-white'>
                         {experience.company}
                       </p>
                       <Badge className='text-xs sm:text-sm md:text-lg border-white/20 border-1 p-2 sm:px-4 sm:py-3 font-extralight leading-none block flex items-center justify-center backdrop-blur-sm bg-white/6'>
@@ -267,15 +221,15 @@ export default function Home() {
             </Card>
           ))}
         </div>
-        {repositoriesServer && (
-          <div>
+        <div>
+          {repositoriesServer && (
             <GithubRepoCarousel
               repositories={repositoriesServer}
               autoplay
               autoplayInterval={3}
             />
-          </div>
-        )}
+          )}
+        </div>
         <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
           <Card className='rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none'>
             <CardHeader>
