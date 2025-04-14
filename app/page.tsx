@@ -14,11 +14,13 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { getTotalWorkingExperience } from '@/libraries/utils';
+import { Repositories } from '@/services/github/repositories';
 import ACCOUNTS from '@/sources/accounts';
 import EXPRIENCES from '@/sources/experiences';
 import PROFESSIONS from '@/sources/professions';
 import TECHNOLOGIES from '@/sources/technologies';
 import WEBLOGS from '@/sources/weblogs';
+import { useQuery } from '@tanstack/react-query';
 import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
@@ -27,6 +29,16 @@ import { IoIosDocument } from 'react-icons/io';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
 export default function Home() {
+  const { data: repositoriesServer, isLoading: repositoriesServerLoading } =
+    useQuery({
+      queryKey: ['getUserRepository'],
+      queryFn: async () => await Repositories.readRepositories(),
+    });
+
+  if (repositoriesServer) {
+    console.log(repositoriesServer);
+  }
+
   return (
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>
       <section className='flex flex-col space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-14 px-1 sm:px-24 py-24'>

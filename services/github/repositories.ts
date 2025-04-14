@@ -1,7 +1,7 @@
 export class Repositories {
-  static endpoint = `${process.env.BASE_URL}/api`;
+  static endpoint = `${process.env.NEXT_PUBLIC_BASE_URL}/api`;
 
-  static async readRepositories(): Promise<GitHubRepositories | null> {
+  static async readRepositories(): Promise<GitHubRepository[] | []> {
     try {
       const response = await fetch(`${this.endpoint}/repos`);
 
@@ -12,7 +12,7 @@ export class Repositories {
 
       throw new Error();
     } catch (error) {
-      return null;
+      return [];
     }
   }
 }
