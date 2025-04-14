@@ -50,7 +50,7 @@ export default function Home() {
     return () => {
       emblaApi.off('select', onSelect);
     };
-  }, [emblaApi]);
+  });
 
   useEffect(() => {
     if (autoplay && emblaApi) {
@@ -88,13 +88,12 @@ export default function Home() {
         emblaApi.off('pointerUp', startAutoplay);
       };
     }
-  }, [autoplay, autoplayInterval, emblaApi]);
+  });
 
-  const { data: repositoriesServer, isLoading: repositoriesServerLoading } =
-    useQuery({
-      queryKey: ['getUserRepository'],
-      queryFn: async () => await Repositories.readRepositories(),
-    });
+  const { data: repositoriesServer } = useQuery({
+    queryKey: ['getUserRepository'],
+    queryFn: async () => await Repositories.readRepositories(),
+  });
 
   return (
     <main className='sm:flex sm:flex-col sm:items-center sm:justify-between min-h-screen bg-black'>

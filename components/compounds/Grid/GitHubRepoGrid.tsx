@@ -39,7 +39,7 @@ export default function GithubRepoCarousel({
     return () => {
       emblaApi.off('select', onSelect);
     };
-  }, [emblaApi]);
+  });
 
   useEffect(() => {
     if (autoplay && emblaApi) {
@@ -77,7 +77,7 @@ export default function GithubRepoCarousel({
         emblaApi.off('pointerUp', startAutoplay);
       };
     }
-  }, [autoplay, autoplayInterval, emblaApi]);
+  });
 
   return (
     <div className='w-full'>
