@@ -167,7 +167,7 @@ export default function Home() {
             orientation='horizontal'
             className='hidden xl:block'
           >
-            <CarouselContent>
+            <CarouselContent className='gap-2'>
               {EXPRIENCES.map((experience) => (
                 <CarouselItem key={experience.company} className='basis-1/2'>
                   <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
@@ -215,7 +215,7 @@ export default function Home() {
             orientation='vertical'
             className='block xl:hidden'
           >
-            <CarouselContent className='-mt-1 h-[30rem]'>
+            <CarouselContent className='-mt-1 h-[30rem] gap-2'>
               {EXPRIENCES.map((experience) => (
                 <CarouselItem key={experience.company} className='basis-1/3'>
                   <Card className='backdrop-blur-sm bg-white/5 border-white/20 border-1 rounded-3xl shadow-none overflow-hidden'>
