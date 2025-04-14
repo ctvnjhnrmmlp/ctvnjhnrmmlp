@@ -38,7 +38,7 @@ export const GithubRepoCard = (props: GitHubRepository) => {
 
   return (
     <Card className='w-full rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none overflow-hidden transition-all'>
-      <CardHeader className='pb-2'>
+      <CardHeader className='py-2'>
         <div className='flex items-start justify-between'>
           <div className='flex items-center gap-2'>
             <Avatar className='h-6 w-6'>
@@ -66,14 +66,14 @@ export const GithubRepoCard = (props: GitHubRepository) => {
             rel='noopener noreferrer'
             className='text-white'
           >
-            {props.name}
+            <h3>{props.name}</h3>
           </Link>
         </CardTitle>
         <CardDescription className='text-white line-clamp-2 h-10'>
           {props.description || 'No description provided'}
         </CardDescription>
       </CardHeader>
-      <CardContent className='pb-2'>
+      <CardContent>
         {props.languages_url && (
           <div className='flex items-center gap-1 mb-2 text-white'>
             <span
@@ -85,7 +85,7 @@ export const GithubRepoCard = (props: GitHubRepository) => {
           </div>
         )}
       </CardContent>
-      <CardFooter className='flex flex-wrap items-center gap-4 pt-0 text-xs text-muted-foreground'>
+      <CardFooter className='flex flex-wrap items-center gap-4 text-xs text-muted-foreground py-2'>
         <div className='flex items-center gap-1'>
           <Star className='h-3.5 w-3.5 text-white' />
           <span className='text-white'>{props.stargazers_count}</span>
