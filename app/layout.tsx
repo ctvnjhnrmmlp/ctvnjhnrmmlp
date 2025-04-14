@@ -3,6 +3,7 @@ import FONTS from '@/configurations/fonts';
 import { METADATA } from '@/configurations/metadata';
 import type { Metadata } from 'next';
 import './globals.css';
+import Providers from './providers';
 
 export const metadata: Metadata = METADATA;
 
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang='en' className='select-none no-scrollbar'>
       <body className={`${FONTS.alpha.className}`}>
-        <Content>{children}</Content>
+        <Providers>
+          <Content>{children}</Content>
+        </Providers>
       </body>
     </html>
   );
