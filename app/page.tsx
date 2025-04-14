@@ -267,6 +267,15 @@ export default function Home() {
             </Card>
           ))}
         </div>
+        {repositoriesServer && (
+          <div>
+            <GithubRepoCarousel
+              repositories={repositoriesServer}
+              autoplay
+              autoplayInterval={3}
+            />
+          </div>
+        )}
         <div className='flex flex-col md:flex-row flex-wrap sm:flex-nowrap md:flex-wrap gap-6 md:gap-4 lg:gap-6'>
           <Card className='rounded-3xl backdrop-blur-sm bg-white/5 border-white/20 border-1 shadow-none'>
             <CardHeader>
@@ -292,15 +301,6 @@ export default function Home() {
             <CardFooter></CardFooter>
           </Card>
         </div>
-        {repositoriesServer && (
-          <div>
-            <GithubRepoCarousel
-              repositories={repositoriesServer}
-              autoplay
-              autoplayInterval={3}
-            />
-          </div>
-        )}
         <div className='flex flex-wrap space-x-2 md:space-x-6'>
           {WEBLOGS.map((weblog) => (
             <button
