@@ -4,11 +4,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Briefcase } from 'lucide-react';
 
 interface Experience {
   company: string;
@@ -27,12 +25,9 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
       <CardHeader className='pb-2'>
         <div className='flex items-start justify-between flex-col sm:flex-row gap-2'>
           <div className='flex items-center gap-2'>
-            <div className='p-2 rounded-sm backdrop-blur-sm bg-white/6 border-white/20 border-1'>
-              <Briefcase className='h-5 w-5 text-white' />
-            </div>
             <div>
               <CardTitle className='text-xl text-white'>
-                {experience.position}
+                <h3>{experience.position}</h3>
               </CardTitle>
               <CardDescription className='text-base font-medium text-white'>
                 {experience.company}
@@ -53,7 +48,6 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           </ul>
         </div>
       </CardContent>
-      <CardFooter className='pt-0 flex justify-center'></CardFooter>
     </Card>
   );
 };
