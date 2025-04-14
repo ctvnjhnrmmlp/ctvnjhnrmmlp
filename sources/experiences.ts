@@ -11,16 +11,6 @@ const EXPERIENCES = [
   },
   {
     position: 'Software Engineer',
-    company: 'Konsumer Solutions Group',
-    current: false,
-  },
-  {
-    position: 'Software Engineer',
-    company: 'Raicom LLC',
-    current: false,
-  },
-  {
-    position: 'Software Engineer',
     company: 'QXIT Corp',
     current: false,
   },
