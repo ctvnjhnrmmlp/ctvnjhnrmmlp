@@ -1,21 +1,31 @@
-import { FaFacebookF, FaGithub, FaGoogle, FaLinkedinIn } from 'react-icons/fa';
-import { SiLinktree } from 'react-icons/si';
+import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {
+  SiDailydotdev,
+  SiGmail,
+  SiLinktree,
+  SiRoadmapdotsh,
+} from 'react-icons/si';
 
 const ACCOUNTS = [
-  {
-    name: 'Linkedin',
-    url: 'https://linkedin.com/in/ctvnjhnrmmlp',
-    icon: FaLinkedinIn,
-  },
   {
     name: 'GitHub',
     url: 'https://github.com/ctvnjhnrmmlp',
     icon: FaGithub,
   },
   {
-    name: 'Google',
-    url: 'mailto:johnrommel.octaviano@gmail.com',
-    icon: FaGoogle,
+    name: 'Roadmap.sh',
+    url: 'https://roadmap.sh/u/ctvnjhnrmmlp',
+    icon: SiRoadmapdotsh,
+  },
+  {
+    name: 'Daily Dev',
+    url: 'https://app.daily.dev/ctvnjhnrmmlp',
+    icon: SiDailydotdev,
+  },
+  {
+    name: 'Linkedin',
+    url: 'https://linkedin.com/in/ctvnjhnrmmlp',
+    icon: FaLinkedinIn,
   },
   {
     name: 'Facebook',
@@ -26,6 +36,11 @@ const ACCOUNTS = [
     name: 'Link Tree',
     url: 'https://linktr.ee/ctvnjhnrmmlp',
     icon: SiLinktree,
+  },
+  {
+    name: 'Google',
+    url: 'mailto:johnrommel.octaviano@gmail.com',
+    icon: SiGmail,
   },
 ];
 
