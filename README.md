@@ -1,5 +1,23 @@
 # John Rommel Octaviano
 
-**Software Engineer | Blockchain, Cloud, Data, Mobile, Web**
+**Engineering the Future | Tech Co-Founder, Next-Gen Builder, Modern Software Engineer**
 
-I am a passionate Software Engineer with years of experience specializing in blockchain, cloud, data, mobile, and web technologies. My expertise lies in building cutting-edge decentralized applications (dApps), crafting robust AI-driven systems, and delivering scalable web solutions that drive innovation and user engagement.
+## Blockchain Engineering
+
+Smart Contracts, Decentralized Applications, Web3 Integrations, ...
+
+## Frontend Engineering
+
+Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
+
+## Backend Engineering
+
+API Design, Auth Systems, Data Handling, ...
+
+## DevOps & Cloud Engineering
+
+CI/CD Pipelines, Containerization, Scalable Deployments, ...
+
+## Software Architecture & System Design
+
+Code Quality, Architectural Styles, Enterprise Patterns, ...
