@@ -20,7 +20,6 @@ import {
   SiGraphql,
   SiIpfs,
   SiJavascript,
-  SiKubernetes,
   SiMongodb,
   SiNestjs,
   SiNextdotjs,
@@ -204,11 +203,6 @@ const TECHNOLOGIES = [
     name: 'Docker',
     url: 'https://www.docker.com/',
     icon: SiDocker,
-  },
-  {
-    name: 'Kubernetes',
-    url: 'https://kubernetes.io/',
-    icon: SiKubernetes,
   },
   {
     name: 'Git',
