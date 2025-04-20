@@ -27,7 +27,6 @@ import {
   SiPostgresql,
   SiPrisma,
   SiPytorch,
-  SiRust,
   SiSocketdotio,
   SiSolidity,
   SiSupabase,
@@ -50,11 +49,6 @@ const TECHNOLOGIES = [
     name: 'TypeScript',
     url: 'https://www.typescriptlang.org/',
     icon: SiTypescript,
-  },
-  {
-    name: 'Rust',
-    url: 'https://www.rust-lang.org/',
-    icon: SiRust,
   },
   {
     name: 'Java',
