@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         </div>
       </CardHeader>
       <CardContent className='pb-2'>
-        <div className='space-y-2'>
+        <div className='space-y-3'>
           {experience.achievements.map((achievement, index) => (
             <p key={index} className='text-whitelist-none text-white text-sm'>
               {achievement}
