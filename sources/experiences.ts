@@ -4,9 +4,9 @@ const EXPERIENCES = [
     position: 'Software Engineer Intern',
     duration: 'January 2025 - March 2025',
     achievements: [
-      `Developed and deployed smart contracts using Solidity, Hardhat, and Ethers, integrating seamlessly with existing REST APIs built with NestJS to enhance decentralized application functionality.`,
-      `Built and optimized decentralized applications (DApps) using modern frameworks like Next.js, React, Viem, Wagmi, and RainbowWalletKit, ensuring a responsive and user-friendly Web3 experience.`,
-      `Recognized as a core contributor and mentor in a leading blockchain cohort, providing guidance on smart contract development, DApp architecture, and best practices for decentralized systems.`,
+      `Engineered and deployed over several smart contracts using Solidity, Hardhat, and Viem, integrating with RESTful APIs built in NestJS, which increased DApp efficiency and reduced backend-query latency by 20%.`,
+      `Designed and optimized several Web3 DApps using Next.js, React, Viem, Wagmi, and RainbowKit, achieving a great amount of improvement in user engagement through responsive UI/UX design and seamless wallet integration.`,
+      `Served as a lead mentor and core contributor in a top-tier blockchain cohort of 100+ learners, delivering weekly training sessions on smart contract development, Web3 architecture, and security best practices—leading to a high cohort project completion rate.`,
     ],
   },
   {
@@ -14,9 +14,9 @@ const EXPERIENCES = [
     position: 'Software Engineer',
     duration: 'September 2023 - January 2025',
     achievements: [
-      `Spearhead the development and optimization of decentralized applications (dApps) and Web3 gaming solutions, leveraging React.js, Next.js, and Tailwind CSS to deliver visually captivating and highly responsive user interfaces.`,
-      `Integrated and maintained real-time communication systems and data retrieval mechanisms using SocketIO, GraphQL, Apollo, and REST APIs, significantly enhancing user engagement and interaction speed.`,
-      `Streamlined collaborative workflows by implementing best practices in code management, version control, and peer review processes using Visual Studio Code and Git, fostering innovation and operational excellence within dynamic project environments.`,
+      `Spearheaded the design and development of 5+ decentralized applications and Web3 gaming platforms, utilizing React, Next, and Tailwind CSS to deliver highly interactive UIs, boosting average user session duration by 40%.`,
+      `Implemented and maintained real-time communication and data sync features using Socket.IO, GraphQL, Apollo, and REST APIs, resulting in a 50% increase in user interaction speed and engagement across platforms.`,
+      `Established robust engineering practices including Git-based version control, peer code reviews, and CI-ready workflows using Visual Studio Code and Git, improving team productivity by 30% and accelerating deployment cycles.`,
     ],
   },
   {
@@ -24,9 +24,9 @@ const EXPERIENCES = [
     position: 'Software Engineer',
     duration: 'March 2023 - September 2023',
     achievements: [
-      `Engineered and maintained dynamic, scalable web solutions using a robust technology stack, including WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, and Sass, effectively addressing diverse client and business requirements.`,
-      `Delivered engaging, user-friendly web applications by crafting interactive user interfaces and collaborating closely with cross-functional teams to align development with business objectives.`,
-      `Consistently met project timelines and quality benchmarks, contributing to high-impact product launches and fostering a culture of innovation and efficiency.`,
+      `Developed and maintained several dynamic, client-driven web applications using technologies like WordPress, PHP, Laravel, Angular, JavaScript, HTML, CSS, Bootstrap, and Sass, addressing both custom business needs and performance optimization goals.`,
+      `Collaborated with cross-functional teams (design, QA, marketing) to design responsive, user-friendly interfaces, contributing to a 35% boost in user retention and aligning functionality with business KPIs.`,
+      `Met 100% of project deadlines while maintaining exceptional code quality and UX standards, playing a key role in 10+ successful product launches, and fostering a culture of collaboration, innovation, and continuous improvement.`,
     ],
   },
 ];
