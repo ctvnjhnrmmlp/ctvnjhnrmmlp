@@ -6,6 +6,7 @@ import {
   FaPython,
   FaReact,
 } from 'react-icons/fa';
+import { GrMysql } from 'react-icons/gr';
 import {
   SiAmazon,
   SiApollographql,
@@ -33,11 +34,10 @@ import {
   SiTailwindcss,
   SiTelegram,
   SiTrpc,
+  SiTurborepo,
   SiTypescript,
 } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
-
-import { GrMysql } from 'react-icons/gr';
 
 const TECHNOLOGIES = [
   {
@@ -209,7 +209,6 @@ const TECHNOLOGIES = [
     name: 'Kubernetes',
     url: 'https://kubernetes.io/',
     icon: SiKubernetes,
-    main: false,
   },
   {
     name: 'Git',
@@ -220,7 +219,11 @@ const TECHNOLOGIES = [
     name: 'AWS',
     url: 'https://aws.amazon.com/',
     icon: SiAmazon,
-    main: false,
+  },
+  {
+    name: 'Turborepo',
+    url: 'https://turbo.build/',
+    icon: SiTurborepo,
   },
 ];
 
