@@ -2,21 +2,21 @@
 
 **Engineering the Future | Tech Co-Founder, Next-Gen Builder, Modern Software Engineer**
 
-## Frontend Engineering
+## Software Architecture & System Design
 
-Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
+Code Quality, Architectural Styles, Enterprise Patterns, ...
 
 ## Backend Engineering
 
 API Design, Auth Systems, Data Handling, ...
 
+## Frontend Engineering
+
+Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
+
 ## DevOps & Cloud Engineering
 
 CI/CD Pipelines, Containerization, Scalable Deployments, ...
-
-## Software Architecture & System Design
-
-Code Quality, Architectural Styles, Enterprise Patterns, ...
 
 ## Blockchain Engineering
 
