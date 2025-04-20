@@ -18,7 +18,6 @@ import WEBLOGS from '@/sources/weblogs';
 import { useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
-import { IoIosDocument } from 'react-icons/io';
 
 export default function Home() {
   const { data: repositoriesServer } = useQuery({
@@ -63,11 +62,6 @@ export default function Home() {
               </button>
             </Link>
           ))}
-          <Link href='/cover'>
-            <button className='p-3 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-lg sm:rounded-3xl text-center backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white cursor-pointer'>
-              <IoIosDocument />
-            </button>
-          </Link>
           <button className='py-2 px-6 sm:p-4 md:p-8 lg:p-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl rounded-xl sm:rounded-3xl text-center sm:flex-grow backdrop-blur-sm bg-white/5 border-white/20 border-1 text-white'>
             <div className='flex justify-center items-center'>
               <Link
