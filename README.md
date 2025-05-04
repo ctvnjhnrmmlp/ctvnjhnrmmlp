@@ -1,6 +1,6 @@
 # John Rommel Octaviano
 
-**Engineering the Future | Next-Gen Builder, Modern Software Engineer**
+**Engineering the Future | Value-Focused Contributor, Next-Gen Builder, Modern Software Engineer**
 
 ## Software Architecture & System Design
 
