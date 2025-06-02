@@ -14,7 +14,7 @@ const EXPERIENCES = [
     position: 'Software Engineer',
     duration: 'September 2023 - January 2025',
     achievements: [
-      `Spearheaded the design and development of 5+ decentralized applications and Web3 gaming platforms, utilizing React, Next, and Tailwind CSS to deliver highly interactive UIs, boosting average user session duration by 40%.`,
+      `Spearheaded the design and development of 5+ decentralized applications and Web3 gaming platforms, utilizing React, Next.js, and Tailwind CSS to deliver highly interactive UIs—boosting average user session duration by 40%. Supported an ecosystem of thousands of active traders by also developing tailored client-side tools such as Telegram bots, Web3 wallets, and trading dashboards to enhance their real-time trading experience.`,
       `Implemented and maintained real-time communication and data sync features using Socket.IO, GraphQL, Apollo, and REST APIs, resulting in a 50% increase in user interaction speed and engagement across platforms.`,
       `Established robust engineering practices including Git-based version control, peer code reviews, and CI-ready workflows using Visual Studio Code and Git, improving team productivity by 30% and accelerating deployment cycles.`,
     ],
