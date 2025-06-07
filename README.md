@@ -26,11 +26,11 @@
 
 <p align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=ctvnjhnrmmlp&theme=highcontrast&hide_border=true&border_radius=25&date_format=M%20j%5B%2C%20Y%5D&card_width=1100&card_height=250" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&date_format=M%20j%5B%2C%20Y%5D&card_width=1100&card_height=250" alt="GitHub Streak" />
   </a>
 </p>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=highcontrast&hide_border=true&border_radius=25&card_width=1100&card_height=250)](https://github.com/ctvnjhnrmmlp/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250)](https://github.com/ctvnjhnrmmlp/github-readme-stats)
 
 <p align="center">
   <a href="https://holopin.io/@ctvnjhnrmmlp">
