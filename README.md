@@ -5,6 +5,8 @@
   </a>
 </p>
 
+
+
 ```
                     
                     ░░░░░██╗░█████╗░██╗░░██╗███╗░░██╗  ██████╗░░█████╗░███╗░░░███╗███╗░░░███╗███████╗██╗░░░░░
@@ -28,28 +30,30 @@
   </a>
 </p>
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=highcontrast&hide_border=true&border_radius=25&card_width=1100&card_height=250)](https://github.com/ctvnjhnrmmlp/github-readme-stats)
+
 <p align="center">
   <a href="https://holopin.io/@ctvnjhnrmmlp">
     <img src="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" alt="Holopin Badges Board" />
   </a>
 </p>
 
-## Software Architecture & System Design
+## sᴏғᴛᴡᴀʀᴇ ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ & sʏsᴛᴇᴍ ᴅᴇsɪɢɴ
 
-Code Quality, Architectural Styles, Enterprise Patterns, ...
+ᴄᴏᴅᴇ ǫᴜᴀʟɪᴛʏ, ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴀʟ sᴛʏʟᴇs, ᴇɴᴛᴇʀᴘʀɪsᴇ ᴘᴀᴛᴛᴇʀɴs, ...
 
-## Backend Engineering
+## ʙᴀᴄᴋᴇɴᴅ ᴇɴɢɪɴᴇᴇʀɪɴɢ
 
-API Design, Auth Systems, Data Handling, ...
+ᴀᴘɪ ᴅᴇsɪɢɴ, ᴀᴜᴛʜ sʏsᴛᴇᴍs, ᴅᴀᴛᴀ ʜᴀɴᴅʟɪɴɢ, ...
 
-## Frontend Engineering
+## ғʀᴏɴᴛᴇɴᴅ ᴇɴɢɪɴᴇᴇʀɪɴɢ
 
-Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
+ᴍᴏᴅᴇʀɴ ᴜɪ/ᴜx, sᴘᴀ/ssʀ ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇs, ᴘᴇʀғᴏʀᴍᴀɴᴄᴇ ᴏᴘᴛɪᴍɪᴢᴀᴛɪᴏɴ, ...
 
-## DevOps & Cloud Engineering
+## ᴅᴇᴠᴏᴘs & ᴄʟᴏᴜᴅ ᴇɴɢɪɴᴇᴇʀɪɴɢ
 
-CI/CD Pipelines, Containerization, Scalable Deployments, ...
+ᴄɪ/ᴄᴅ ᴘɪᴘᴇʟɪɴᴇs, ᴄᴏɴᴛᴀɪɴᴇʀɪᴢᴀᴛɪᴏɴ, sᴄᴀʟᴀʙʟᴇ ᴅᴇᴘʟᴏʏᴍᴇɴᴛs, ...
 
-## Blockchain Engineering
+## ʙʟᴏᴄᴋᴄʜᴀɪɴ ᴇɴɢɪɴᴇᴇʀɪɴɢ
 
-Smart Contracts, Decentralized Applications, Web3 Integrations, ...
+sᴍᴀʀᴛ ᴄᴏɴᴛʀᴀᴄᴛs, ᴅᴇᴄᴇɴᴛʀᴀʟɪᴢᴇᴅ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴs, ᴡᴇʙ𝟹 ɪɴᴛᴇɢʀᴀᴛɪᴏɴs, ...
