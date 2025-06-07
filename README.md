@@ -31,7 +31,11 @@
   </a>
 </p>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250)](https://github.com/ctvnjhnrmmlp/github-readme-stats)
+<p align="center">
+  <a href="https://github-readme-stats.vercel.app">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" alt="GitHub Streak" />
+  </a>
+</p>
 
 <p align="center">
   <a href="https://holopin.io/@ctvnjhnrmmlp">
