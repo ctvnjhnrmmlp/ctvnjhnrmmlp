@@ -1,3 +1,10 @@
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=ctvnjhnrmmlp&label=Profile%20views&color=1e90ff&style=flat" alt="Profile views" />
+  <a href="https://user-badge.committers.top/philippines/ctvnjhnrmmlp">
+    <img src="https://user-badge.committers.top/philippines/ctvnjhnrmmlp.svg" alt="Committers Top Badge" />
+  </a>
+</p>
+
 ```
                     
                     ░░░░░██╗░█████╗░██╗░░██╗███╗░░██╗  ██████╗░░█████╗░███╗░░░███╗███╗░░░███╗███████╗██╗░░░░░
@@ -14,13 +21,6 @@
                               ╚█████╔╝╚█████╔╝░░░██║░░░██║░░██║░░╚██╔╝░░██║██║░░██║██║░╚███║╚█████╔╝
                               ░╚════╝░░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚════╝░
 ```
-
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=ctvnjhnrmmlp&label=Profile%20views&color=1e90ff&style=flat" alt="Profile views" />
-  <a href="https://user-badge.committers.top/philippines/ctvnjhnrmmlp">
-    <img src="https://user-badge.committers.top/philippines/ctvnjhnrmmlp.svg" alt="Committers Top Badge" />
-  </a>
-</p>
 
 <p align="center">
   <a href="https://git.io/streak-stats">
