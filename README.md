@@ -23,6 +23,21 @@
                               ░╚════╝░░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚════╝░
 
 
+Software Architecture & System Design
+Code Quality, Architectural Styles, Design Patterns, ...
+
+Backend Engineering
+API Design, Auth Systems, Data Handling, ...
+
+Frontend Engineering
+Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
+
+DevOps & Cloud Engineering
+CI/CD Pipelines, Containerization, Scalable Deployments, ...
+
+Blockchain Engineering
+Smart Contracts, Decentralized Applications, Web3 Integrations, ...
+
 ```
 
 <p align="center">
@@ -42,23 +57,3 @@
     <img src="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" alt="Holopin Badges Board" />
   </a>
 </p>
-
-## Software Architecture & System Design
-
-Code Quality, Architectural Styles, Enterprise Patterns, ...
-
-## Backend Engineering
-
-API Design, Auth Systems, Data Handling, ...
-
-## Frontend Engineering
-
-Modern UI/UX, SPA/SSR Architectures, Performance Optimization, ...
-
-## DevOps & Cloud Engineering
-
-CI/CD Pipelines, Containerization, Scalable Deployments, ...
-
-## Blockchain Engineering
-
-Smart Contracts, Decentralized Applications, Web3 Integrations, ...
