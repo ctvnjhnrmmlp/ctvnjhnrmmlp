@@ -1,6 +1,8 @@
 # John Rommel Octaviano
 
-**Engineering the Future | Value-Focused Contributor, Next-Gen Builder, Modern Software Engineer**
+[![committers.top badge](https://user-badge.committers.top/philippines/ctvnjhnrmmlp.svg)](https://user-badge.committers.top/philippines/ctvnjhnrmmlp)
+![](https://komarev.com/ghpvc/?username=ctvnjhnrmmlp)
+[![@rphi's Holopin board](https://holopin.io/api/user/board?user=ctvnjhnrmmlp)](https://holopin.io/@ctvnjhnrmmlp)
 
 ## Software Architecture & System Design
 
