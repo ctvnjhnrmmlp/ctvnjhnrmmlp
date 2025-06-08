@@ -3,10 +3,10 @@
   <img src="https://komarev.com/ghpvc/?username=ctvnjhnrmmlp&label=Profile%20views&color=1e90ff&style=flat" alt="Profile views">
 </picture>
 
-<a href="https://user-badge.committers.top/philippines_public/ctvnjhnrmmlp">
+<a href="https://user-badge.committers.top/philippines_private/ctvnjhnrmmlp">
   <picture>
-    <source srcset="https://user-badge.committers.top/philippines_public/ctvnjhnrmmlp.svg" type="image/svg+xml">
-    <img src="https://user-badge.committers.top/philippines_public/ctvnjhnrmmlp.svg" alt="Committers Top Badge">
+    <source srcset="https://user-badge.committers.top/philippines_private/ctvnjhnrmmlp.svg" type="image/svg+xml">
+    <img src="https://user-badge.committers.top/philippines_private/ctvnjhnrmmlp.svg" alt="Committers Top Badge">
   </picture>
 <a>
 
