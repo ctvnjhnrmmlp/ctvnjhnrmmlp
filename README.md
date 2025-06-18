@@ -34,21 +34,6 @@
         /_______  /\____/|__|   |__|   \/\_/ (____  |__|   \___  > /_______  |___|  \___  /|__|___|  /\___  \___  |__|
                 \/                                \/           \/          \/     \/_____/         \/     \/    \/
 
-Software Architecture & System Design
-Code Quality, Architectural Styles, Design Patterns
-
-Backend Engineering
-API Design, Auth Systems, Data Handling
-
-Frontend Engineering
-Modern UI/UX, SPA/SSR Architectures, Performance Optimization
-
-DevOps & Cloud Engineering
-CI/CD Pipelines, Containerization, Scalable Deployments
-
-Blockchain Engineering
-Smart Contracts, Decentralized Applications, Web3 Integrations
-
 ```
 
 <picture>
