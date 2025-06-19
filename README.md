@@ -53,11 +53,6 @@
 </picture>
 
 <picture>
-  <source srcset="https://streak-stats.demolab.com?user=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&date_format=M%20j%5B%2C%20Y%5D&card_width=1100&card_height=250" type="image/svg+xml" />
-  <img src="https://streak-stats.demolab.com?user=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&date_format=M%20j%5B%2C%20Y%5D&card_width=1100&card_height=250" alt="GitHub Streak" />
-</picture>
-
-<picture>
   <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" width="100%" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub repos per language" />
 </picture>
@@ -65,6 +60,11 @@
 <picture>
   <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" width="100%" />
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub most commit language" />
+</picture>
+
+<picture>
+  <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" type="image/svg+xml" />Add commentMore actions
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" alt="GitHub Streak" />
 </picture>
 
 <picture>
