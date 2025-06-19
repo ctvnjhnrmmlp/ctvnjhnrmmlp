@@ -68,11 +68,6 @@
 </picture>
 
 <picture>
-  <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" type="image/svg+xml" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" alt="GitHub Streak" />
-</picture>
-
-<picture>
   <source srcset="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" type="image/svg+xml" />
   <img src="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" alt="Holopin Badges Board" />
 </picture>
