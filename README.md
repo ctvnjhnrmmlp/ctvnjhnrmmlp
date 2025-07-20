@@ -42,15 +42,6 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile details" />
 </picture>
 
-<div align="center">
-
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark)
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8)
-![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ctvnjhnrmmlp&theme=github_dark)
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ctvnjhnrmmlp&theme=github_dark)
-
-</div>
-
 <picture>
   <source srcset="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" type="image/svg+xml" />
   <img src="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" alt="Holopin Badges Board" />
