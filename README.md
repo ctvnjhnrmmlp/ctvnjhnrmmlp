@@ -51,33 +51,6 @@
 
 </div>
 
-<div style="display: flex;">
-  <picture>
-    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" width="500" alt="GitHub profile stats" />
-  </picture>
-  <picture>
-    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" width="500" alt="GitHub productive time" />
-  </picture>
-</div>
-
-<div style="display: flex;">
-  <picture>
-    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ctvnjhnrmmlp&theme=github_dark" width="503" alt="GitHub repos per language" />
-  </picture>
-  <picture>
-    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ctvnjhnrmmlp&theme=github_dark" width="503" alt="GitHub most commit language" />
-  </picture>
-</div>
-
-<picture>
-  <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" type="image/svg+xml" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ctvnjhnrmmlp&theme=github_dark_dimmed&hide_border=true&border_radius=25&card_width=1100&card_height=250" alt="GitHub Streak" />
-</picture>
-
 <picture>
   <source srcset="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" type="image/svg+xml" />
   <img src="https://holopin.io/api/user/board?user=ctvnjhnrmmlp" alt="Holopin Badges Board" />
