@@ -42,6 +42,19 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile details" />
 </picture>
 
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" width="50%" alt="GitHub profile stats" />
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between;">
+  <picture style="flex: 1; min-width: 300px;">
+    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile stats" />
+  </picture>
+  <picture style="flex: 1; min-width: 300px;">
+    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" type="image/svg+xml" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" width="100%" alt="GitHub productive time" />
+  </picture>
+</div>
+
 <div style="display: flex;">
   <picture>
     <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
