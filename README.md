@@ -45,11 +45,11 @@
 <div style="display: flex;">
   <picture>
     <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" width="503" alt="GitHub profile stats" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=ctvnjhnrmmlp&theme=github_dark" width="500" alt="GitHub profile stats" />
   </picture>
   <picture>
     <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" type="image/svg+xml" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" width="503" alt="GitHub productive time" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ctvnjhnrmmlp&theme=github_dark&utcOffset=8" width="500" alt="GitHub productive time" />
   </picture>
 </div>
 
