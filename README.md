@@ -21,6 +21,8 @@
   <a>
 </div>
 
+<br>
+
 ```
                 
                      ██╗ ██████╗ ██╗  ██╗███╗   ██╗    ██████╗  ██████╗ ███╗   ███╗███╗   ███╗███████╗██╗     
@@ -55,26 +57,40 @@
                                                                                                
 ```
 
-<a href="https://github.com/ctvnjhnrmmlp">
-  <picture>
-    <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" width="100%" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile details" />
-  </picture>
-</a>
+<br>
 
-<a href="https://roadmap.sh/u/ctvnjhnrmmlp">
-  <picture>
-    <source srcset="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" type="image/svg+xml" />
-    <img src="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" width="100%" alt="roadmap.sh" />
-  </picture>
-</a>
+<div>
+  <a href="https://github.com/ctvnjhnrmmlp">
+    <picture>
+      <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" width="100%" />
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile details" />
+    </picture>
+  </a>
+</div>
 
-<a href="https://app.daily.dev/ctvnjhnrmmlp">
-  <picture>
-    <source srcset="./devcard.png" type="image/svg+xml" width="100%" />
-    <img src="./devcard.png" width="100%" alt="Daily.dev Dev Card" />
-  </picture>
-</a>
+<br>
+
+<div>
+  <a href="https://roadmap.sh/u/ctvnjhnrmmlp">
+    <picture>
+      <source srcset="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" type="image/svg+xml" />
+      <img src="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" width="100%" alt="roadmap.sh" />
+    </picture>
+  </a>
+</div>
+
+<br>
+
+<div>
+  <a href="https://app.daily.dev/ctvnjhnrmmlp">
+    <picture>
+      <source srcset="./devcard.png" type="image/svg+xml" width="100%" />
+      <img src="./devcard.png" width="100%" alt="Daily.dev Dev Card" />
+    </picture>
+  </a>
+</div>
+
+<br>
 
 <div align="center">
 
