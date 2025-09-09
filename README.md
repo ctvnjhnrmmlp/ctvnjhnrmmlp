@@ -71,6 +71,14 @@
 <br>
 
 <div>
+  <a href="https://gitroll.io/profile/ujqQfwju3HDa7bkI3kcjRbGyiA2E2" target="_blank">
+    <img src="https://gitroll.io/api/badges/profiles/v1/ujqQfwju3HDa7bkI3kcjRbGyiA2E2?theme=dark" alt="GitRoll Profile Badge"/>
+  </a>
+</div>
+
+<br>
+
+<div>
   <a href="https://roadmap.sh/u/ctvnjhnrmmlp">
     <picture>
       <source srcset="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" type="image/svg+xml" />
