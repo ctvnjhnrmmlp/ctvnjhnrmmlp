@@ -81,8 +81,8 @@
 <div>
   <a href="https://roadmap.sh/u/ctvnjhnrmmlp">
     <picture>
-      <source srcset="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" type="image/svg+xml" />
-      <img src="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cbackend" width="100%" alt="roadmap.sh" />
+      <source srcset="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cdevops" type="image/svg+xml" />
+      <img src="https://roadmap.sh/card/wide/65c838d8d789a518cf266ad6?variant=dark&roadmaps=software-design-architecture%2Cfull-stack%2Cblockchain%2Cdevops" width="100%" alt="roadmap.sh" />
     </picture>
   </a>
 </div>
