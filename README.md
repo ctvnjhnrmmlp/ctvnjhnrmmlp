@@ -60,17 +60,6 @@
 <br>
 
 <div>
-  <a href="https://github.com/ctvnjhnrmmlp">
-    <picture>
-      <source srcset="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" type="image/svg+xml" width="100%" />
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ctvnjhnrmmlp&theme=github_dark" width="100%" alt="GitHub profile details" />
-    </picture>
-  </a>
-</div>
-
-<br>
-
-<div>
   <a href="https://gitroll.io/profile/ujqQfwju3HDa7bkI3kcjRbGyiA2E2" target="_blank">
     <img src="https://gitroll.io/api/badges/profiles/v1/ujqQfwju3HDa7bkI3kcjRbGyiA2E2?theme=dark" alt="GitRoll Profile Badge"/>
   </a>
