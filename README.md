@@ -63,15 +63,4 @@
 
 <br>
 
-<div>
-  <a href="https://app.daily.dev/ctvnjhnrmmlp">
-    <picture>
-      <source srcset="./devcard.png" type="image/svg+xml" width="100%" />
-      <img src="./devcard.png" width="100%" alt="Daily.dev Dev Card" />
-    </picture>
-  </a>
-</div>
-
-<br>
-
 [![An image of @ctvnjhnrmmlp's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ctvnjhnrmmlp)](https://holopin.io/@ctvnjhnrmmlp)
