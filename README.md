@@ -1,6 +1,6 @@
 # John Rommel Octaviano
 
-### Mid-Level Software Engineer, Computer Science.
+### Mid-Level Software Engineer
 
 **Over 2 years of professional experience in modern software engineering**
 
