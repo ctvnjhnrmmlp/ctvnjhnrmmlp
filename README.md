@@ -45,8 +45,6 @@ I specialize in building scalable, secure, and high-performance systems — from
   <a>
 </div>
 
-<br>
-
 <div>
 
 <h3>Main Technologies</h3>
